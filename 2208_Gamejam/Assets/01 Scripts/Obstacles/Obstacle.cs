@@ -5,18 +5,21 @@ using UnityEngine;
 [RequireComponent(typeof(ObstacleTag))]
 public abstract class Obstacle : MonoBehaviour
 {
-    [SerializeField] private TimeStorage _appearTime;
-    [SerializeField] private Transform _appearPos;
+    [SerializeField] protected TimeStorage _appearTime;
+    [SerializeField] protected Vector2 _appearPos;
 
     protected IDamgeSystem _damage;
 
     protected bool _isAppear = false;
+    public bool isPlay = true;
 
     private SpriteRenderer _renderer;
 
     private void Awake()
     {
         _renderer = gameObject.GetComponent<SpriteRenderer>();
+        if(_appearPos.Equals(Vector2.zero))
+            _appearPos = transform.position;
         SetAppear(_isAppear);
     }
 
@@ -31,7 +34,7 @@ public abstract class Obstacle : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        if(_isAppear)
+        if(_isAppear && isPlay)
             Moving();
     }
 
