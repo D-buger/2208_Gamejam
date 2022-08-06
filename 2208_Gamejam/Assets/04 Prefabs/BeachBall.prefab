@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7888770253655288799}
   - component: {fileID: 7888770253655288785}
   - component: {fileID: 7888770253655288786}
+  - component: {fileID: 656305635}
   m_Layer: 0
   m_Name: BeachBall
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7888770253655288798}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.14, y: 4.65, z: 1.205635}
   m_LocalScale: {x: 1.9468436, y: 1.9468436, z: 1.9468436}
   m_Children:
@@ -198,6 +199,26 @@ CircleCollider2D:
   m_Offset: {x: -0.00000011920929, y: 0}
   serializedVersion: 2
   m_Radius: 0.57547176
+--- !u!114 &656305635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7888770253655288798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1154901400607c7448f18b5bb253b556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _appearTime:
+    randomStartTime: 0
+    randomEndTime: 0
+  _appearPos: {x: 0, y: 0}
+  isPlay: 1
+  curveTrans: []
+  point: 0
+  speed: 0
 --- !u!1 &7888770253738654008
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,55 +4,70 @@ using UnityEngine;
 
 public class InputSystem : MonoBehaviour
 {
-    public bool isDrag = false;
-    public Vector2 draggedPos = Vector2.zero;
-    public Vector2 mousePos;
+    public bool IsDrag { get; private set; } = false;
+    public float DraggedTime { get; private set; } = 0f;
+    public Vector2 DraggedPos { get; private set; } = Vector2.zero;
+    public Vector2 OriMousePos { get; private set; }
+    public Vector2 MousePos { get; private set; }
 
     private Obstacle _rayColliderObject;
-    [SerializeField] private string _rayColliderTag;
+    private string _rayColliderTag;
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            isDrag = true;
+            MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            OriMousePos = MousePos;
+            RaycastHit2D hit = Physics2D.Raycast(MousePos, Vector2.zero);
+            
+            IsDrag = true;
+            DraggedTime = 0;
 
             if (hit.collider)
             {
-                _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
-                _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
-                switch (_rayColliderTag)
+                if (hit.collider.CompareTag(SystemManager.CASTLE_TAG))
+                    SystemManager.Instance.UseBucket();
+                else
                 {
-                    case "Crab":
-                        _rayColliderObject.isPlay = false;
-                        draggedPos = mousePos;
-                        break;
+                    _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
+                    _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
+
+                    _rayColliderObject.MouseDown(MousePos);
                 }
             }
-
         }
 
         if (Input.GetMouseButton(0))
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            switch (_rayColliderTag)
-            {
-                case "Crab":
-                    _rayColliderObject.GetComponent<Crab>().Dragging(draggedPos,mousePos);
-                    break;
-            }
+            Vector2 MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            DraggedTime += Time.deltaTime;
+
+            _rayColliderObject?.OnDrag(MousePos);
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            switch (_rayColliderTag)
+            MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            IsDrag = false;
+            if(!_rayColliderObject)
             {
-                case "Crab":
-                    _rayColliderObject.isPlay = true;
-                    break;
+                RaycastHit2D hit = Physics2D.Raycast(MousePos, Vector2.zero);
+
+                if (hit.collider)
+                {
+                    _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
+                    _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
+
+                }
             }
+
+            _rayColliderObject?.MouseUp(MousePos);
+
+            _rayColliderObject = null;
+            _rayColliderTag = null;
+            DraggedTime = 0f;
         }
     }
 

@@ -9,12 +9,11 @@ public class Crab : Obstacle
 
     private Vector2 _target;
 
-    private bool _isReturnToStart = false;
-
     private void Start()
     {
-        _damage = new InstantDeath();
-        _target = new Vector2(SystemManager.Instance.castlePos.x, transform.position.y);
+        //_damage = new InstantDeath();
+        _damage = new JustDamage();
+        _target = new Vector2(SystemManager.Instance.CastlePos.x, transform.position.y);
     }
 
     public override void Moving()
@@ -22,10 +21,28 @@ public class Crab : Obstacle
         transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
     }
 
-    public void Dragging(Vector2 ori,Vector2 pos)
+
+    private Vector2 mouseDownPos = Vector2.zero;
+    public override void MouseDown(Vector2 mousePos)
     {
-        float min = ori.x > _appearPos.x ? _appearPos.x : ori.x;
-        float max = ori.x < _appearPos.x ? _appearPos.x : ori.x;
-        transform.position = new Vector2(Mathf.Clamp(pos.x, min, max), transform.position.y);
+        mouseDownPos = mousePos;
+        isPlay = false;
+    }
+
+    public override void OnDrag(Vector2 mousePos)
+    {
+        float min = mouseDownPos.x > oriPos.x ? oriPos.x : mouseDownPos.x;
+        float max = mouseDownPos.x < oriPos.x ? oriPos.x : mouseDownPos.x;
+        transform.position = new Vector2(Mathf.Clamp(mousePos.x, min, max), transform.position.y);
+    }
+
+    public override void MouseUp(Vector2 mousePos)
+    {
+        isPlay = true;
+    }
+
+    public override void AfterDamage()
+    {
+
     }
 }

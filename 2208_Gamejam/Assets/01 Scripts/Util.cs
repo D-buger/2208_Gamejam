@@ -128,5 +128,40 @@ namespace SOO
 
             return vec;
         }
+
+        /// <summary>
+        /// º£Áö¾î °î¼±
+        /// </summary>
+        /// <param name="pointCount"></param>
+        /// <param name="vec"></param>
+        /// <returns></returns>
+        public static Vector2[] CurvePointsOfVectors(int pointCount, params Vector2[] vec)
+        {
+            Vector2[] points = new Vector2[pointCount + 1];
+            float unit = 1.0f / pointCount;
+
+            int n = vec.Length - 1;
+            float[] t = new float[n];
+            float[] u = new float[n];
+            t[0] = 0f;
+            for(int i = 0; i < pointCount + 1; i++, t[0] += unit)
+            {
+                u[0] = (1 - t[0]);
+                for(int j = 1; j < n; j++)
+                {
+                    t[j] = t[0] * t[j - 1];
+                    u[j] = u[0] * u[j - 1];
+                }
+
+                points[i] =
+                    vec[0] * u[n - 1] + vec[n] * t[n - 1];
+                for(int j =1; j < n; j++)
+                {
+                    points[i] += vec[j] * (t[j - 1] * u[n - 1 - j] * n);
+                }
+            }
+
+            return points;
+        }
     }
 }

@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _appearTime:
     randomStartTime: 1
-    randomEndTime: 5
+    randomEndTime: 8
   _appearPos: {x: 0, y: 0}
   isPlay: 1
   speed: 1

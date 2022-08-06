@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class TimeStorage
+public class FloatStorage
 {
-    [SerializeField] private float randomStartTime;
-    [SerializeField] private float randomEndTime = 0;
+    [SerializeField] private float randomStart;
+    [SerializeField] private float randomEnd = 0;
 
-    public float GetRandomTime() 
-        => randomEndTime != 0 ? Random.Range(randomStartTime, randomEndTime) : randomStartTime;
+    public float GetRandomFloat() 
+        => randomEnd != 0 ? Random.Range(randomStart, randomEnd) : randomStart;
 }

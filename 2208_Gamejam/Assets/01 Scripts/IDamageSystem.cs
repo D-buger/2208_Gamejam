@@ -11,7 +11,10 @@ public class JustDamage : IDamgeSystem
 {
     public void DamageToPlayer()
     {
-        Debug.Log("Damge 1");
+        if (!SystemManager.Instance.IsUseBucket)
+        {
+            SystemManager.Instance.ReminedHP--;
+        }
     }
 }
 
@@ -19,6 +22,9 @@ public class InstantDeath : IDamgeSystem
 {
     public void DamageToPlayer()
     {
-        Debug.Log("GameOver");
+        if (!SystemManager.Instance.IsUseBucket)
+        {
+            Debug.Log("GameOver");
+        }
     }
 }
