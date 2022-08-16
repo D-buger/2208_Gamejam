@@ -24,7 +24,7 @@ public class InstantDeath : IDamgeSystem
     {
         if (!SystemManager.Instance.IsUseBucket)
         {
-            Debug.Log("GameOver");
+            SystemManager.Instance.GameOver();
         }
     }
 }

@@ -5,36 +5,50 @@ using UnityEngine;
 [RequireComponent(typeof(ObstacleTag))]
 public abstract class Obstacle : MonoBehaviour
 {
-    [SerializeField] protected FloatStorage appearTime;
-    [SerializeField] protected PositionStorage appearPos; 
+    [SerializeField] protected WarningSign warning;
 
-    protected IDamgeSystem _damage;
+    [SerializeField] protected FloatStorage appearTime;
+    [SerializeField] protected PositionStorage appearPos;
+    [SerializeField] protected float delayAfterDamage;
+
+    protected IDamgeSystem damage;
     protected Vector2 oriPos;
 
     protected bool isAppear = false;
     protected bool isPlay = true;
 
     protected float appearedTime = 0f;
+    protected float disappearedTime = 0f;
 
-    private SpriteRenderer _renderer;
-    private Collider2D _coll;
+    protected SpriteRenderer _renderer;
+    protected Collider2D _coll;
 
     private void Awake()
     {
         _renderer = gameObject.GetComponent<SpriteRenderer>();
         _coll = gameObject.GetComponent<Collider2D>();
         oriPos = transform.position;
-        SetAppear(isAppear);
+    }
+    protected virtual void Start()
+    {
+        SetAppear(false);
     }
 
     protected virtual void Update()
     {
-        if (!isAppear && SystemManager.Instance.timer.isTimePasses(appearTime.GetRandomFloat()))
+        if (!isAppear && SystemManager.Instance.timer.isTimePasses(disappearedTime + delayAfterDamage, appearTime.GetRandomFloat()))
         {
-            isAppear = true;
             appearedTime = SystemManager.Instance.timer.GetGameTime;
-            SetAppear(isAppear);
+            if (!warning)
+                SetAppear(true);
+            else
+                warning.WarningSignEnable();
         }
+    }
+
+    protected virtual void TimeToAppear()
+    {
+
     }
 
     protected virtual void FixedUpdate()
@@ -45,16 +59,20 @@ public abstract class Obstacle : MonoBehaviour
 
     public abstract void Moving();
 
-    public virtual void SetAppear(bool isApear)
+    public virtual void SetAppear(bool appear)
     {
-        if (!appearPos.GetRandomPosition().Equals(Vector2.zero) && isApear == true)
-            transform.position = appearPos.GetRandomPosition();
-        _renderer.enabled = isApear;
-        _coll.enabled = isApear;
+        isAppear = appear;
+        _renderer.enabled = appear;
+        _coll.enabled = appear;
 
-        if (!isAppear)
+        if (!appearPos.GetRandomPosition().Equals(Vector2.zero) && appear == true)
+            transform.position = appearPos.GetRandomPosition();
+
+        if (!appear)
         {
             appearedTime = 0;
+            disappearedTime = SystemManager.Instance.timer.GetGameTime;
+            transform.position = oriPos;
         }
     }
 
@@ -64,12 +82,17 @@ public abstract class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        OnEnter(collision);
+    }
+
+    protected virtual void OnEnter(Collider2D collision)
+    {
         if (collision.CompareTag(SystemManager.CASTLE_TAG))
         {
-            _damage.DamageToPlayer();
+            damage.DamageToPlayer();
             AfterDamage();
         }
     }
-
     public abstract void AfterDamage();
+
 }

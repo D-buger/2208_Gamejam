@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using SOO;
 
 [System.Serializable]
 public class UIManager
@@ -10,6 +11,10 @@ public class UIManager
     [SerializeField] private Image[] hpImage;
     [SerializeField] private Image[] bucketImage;
     [SerializeField] private TMP_Text timerText;
+    [SerializeField] private TMP_Text gameOverNowScoreText;
+    [SerializeField] private TMP_Text gameOverBestScoreText;
+    [SerializeField] private SpriteRenderer castleRenderer;
+    [SerializeField] private Sprite[] castleSprites = new Sprite[3];
 
     public void SetHpImage(int hp)
     {
@@ -17,6 +22,8 @@ public class UIManager
         {
             hpImage[i].enabled = i <= hp - 1;
         }
+
+        castleRenderer.sprite = castleSprites[hp];
     }
 
     public void SetBucketImage(int bucket)
@@ -29,6 +36,19 @@ public class UIManager
 
     public void SetTimerText(float time)
     {
-        timerText.text = time.ToString("0.00");
+        timerText.text = SetTimeText(time);
     }
+
+    public void SetGameOverNowScoreText(float time)
+    {
+        gameOverNowScoreText.text = SetTimeText(time);
+    }
+
+    public void SetGameOverBestScoreText()
+    {
+        gameOverBestScoreText.text = SetTimeText(PlayerPrefs.GetFloat("bestScore"));
+    }
+
+    private string SetTimeText(float time)
+        => Util.StringBuilder(time.ToString("0.00"), "s");
 }

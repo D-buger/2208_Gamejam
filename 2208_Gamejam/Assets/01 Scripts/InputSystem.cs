@@ -43,6 +43,9 @@ public class InputSystem : MonoBehaviour
             Vector2 MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             DraggedTime += Time.deltaTime;
+            DraggedPos = (MousePos - OriMousePos).normalized;
+
+            SetCollObj();
 
             _rayColliderObject?.OnDrag(MousePos);
         }
@@ -51,23 +54,28 @@ public class InputSystem : MonoBehaviour
         {
             MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             IsDrag = false;
-            if(!_rayColliderObject)
-            {
-                RaycastHit2D hit = Physics2D.Raycast(MousePos, Vector2.zero);
-
-                if (hit.collider)
-                {
-                    _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
-                    _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
-
-                }
-            }
+            SetCollObj();
 
             _rayColliderObject?.MouseUp(MousePos);
 
             _rayColliderObject = null;
             _rayColliderTag = null;
             DraggedTime = 0f;
+        }
+    }
+
+    private void SetCollObj()
+    {
+        if (!_rayColliderObject)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(MousePos, Vector2.zero);
+
+            if (hit.collider)
+            {
+                _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
+                _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
+
+            }
         }
     }
 

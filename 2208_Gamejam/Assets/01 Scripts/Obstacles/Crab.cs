@@ -1,19 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Crab : Obstacle
 {
+    private static event UnityAction crabInAction;
+    private static float anotherAppearedTime = -2;
+
     [Space(20)]
     [SerializeField] private float speed = 1;
+    [SerializeField] private float anotherCrabAppearTiming = 240;
 
     private Vector2 _target;
 
-    private void Start()
+    protected override void Start()
     {
-        //_damage = new InstantDeath();
-        _damage = new JustDamage();
+        crabInAction = null;
+        anotherAppearedTime = -2;
+
+        base.Start();
+        damage = new InstantDeath();
         _target = new Vector2(SystemManager.Instance.CastlePos.x, transform.position.y);
+
+        if(crabInAction?.GetInvocationList() == null)
+        {
+            if (anotherAppearedTime == -2)
+            {
+                anotherAppearedTime = -1;
+                if (Random.Range(0, 2) == 1)
+                {
+                    crabInAction += () => this.SetAppear(true);
+                }
+            }
+            else if (anotherAppearedTime == -1)
+            {
+                crabInAction += () => this.SetAppear(true);
+            }
+        }
+    }
+
+    protected override void Update()
+    {
+        if (anotherAppearedTime < 0)
+        {
+            crabInAction.Invoke();
+            anotherAppearedTime = anotherAppearedTime < 0 ? appearedTime : anotherAppearedTime;
+        }
+        else if (!isAppear && SystemManager.Instance.timer.isTimePasses(anotherAppearedTime, anotherCrabAppearTiming))
+        {
+            SetAppear(true);
+        }
     }
 
     public override void Moving()
@@ -27,6 +64,7 @@ public class Crab : Obstacle
     {
         mouseDownPos = mousePos;
         isPlay = false;
+        GameManager.Instance.ChangeCursorToDefense(true);
     }
 
     public override void OnDrag(Vector2 mousePos)
@@ -39,6 +77,7 @@ public class Crab : Obstacle
     public override void MouseUp(Vector2 mousePos)
     {
         isPlay = true;
+        GameManager.Instance.ChangeCursorToDefense(false);
     }
 
     public override void AfterDamage()

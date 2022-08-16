@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a9d15a34e74e20e41b2e94b4e0c91169
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - 210 Hayanbunpil
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 57a91ca026eb1c54aad5b4b850b39177, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
