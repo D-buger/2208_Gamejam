@@ -7,6 +7,7 @@ public class GameManager : SingletonBehavior<GameManager>
 {
     [SerializeField] private Texture2D defaultCursorTexture;
     [SerializeField] private Texture2D defenseCursorTexture;
+    [SerializeField] private Texture2D dragCursorTexture;
 
     [SerializeField]private Settings setting;
 
@@ -44,6 +45,14 @@ public class GameManager : SingletonBehavior<GameManager>
     {
         if(isCursorDefense)
             Cursor.SetCursor(defenseCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
+        else
+            Cursor.SetCursor(defaultCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
+    }
+
+    public void ChangeCursorToDrag(bool isCursorDrag)
+    {
+        if (isCursorDrag)
+            Cursor.SetCursor(dragCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
         else
             Cursor.SetCursor(defaultCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
     }

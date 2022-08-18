@@ -15,11 +15,16 @@ public class SystemManager : SingletonBehavior<SystemManager>
     [SerializeField]
     public Snack snack;
 
+    public bool isGameOver = false;
+
     [SerializeField] private float bucketInvincibilityTime = 5f;
     [SerializeField] private int remainedBucket = 3;
     [SerializeField] private GameObject bucket;
 
     [SerializeField] private GameObject gameOverPanel;
+
+    [SerializeField] private GameObject deathCamParent;
+    private GameObject[] deathCams;
     public int RemainedBucket
     {
         get => remainedBucket;
@@ -38,7 +43,10 @@ public class SystemManager : SingletonBehavior<SystemManager>
             remainedHP = value;
             _ui.SetHpImage(remainedHP);
             if (remainedHP <= 0)
+            {
+                isGameOver = true;
                 GameOver();
+            }
         }
     }
 
@@ -75,6 +83,10 @@ public class SystemManager : SingletonBehavior<SystemManager>
         bucket.SetActive(false);
         if (!input)
             GetComponent<InputSystem>();
+
+        deathCams = new GameObject[deathCamParent.transform.childCount];
+        for (int i = 0; i < deathCams.Length; i++)
+            deathCams[i] = deathCamParent.transform.GetChild(i).gameObject;
     }
     private void Update()
     {
@@ -88,6 +100,14 @@ public class SystemManager : SingletonBehavior<SystemManager>
                 bucket.SetActive(false);
                 _bucketUseTime = 0f;
             }
+        }
+    }
+
+    public void DisableAllDeathCams()
+    {
+        foreach (GameObject obj in deathCams)
+        {
+            obj.SetActive(false);
         }
     }
 

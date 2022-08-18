@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - defaultCursorTexture: {fileID: 2800000, guid: 57e6cac2999576e4b9151a754e8f18c5, type: 3}
   - defenseCursorTexture: {fileID: 2800000, guid: a9769f33826ef3444871cb11b2baca22, type: 3}
+  - dragCursorTexture: {fileID: 2800000, guid: 89111f1dfdd6cb74480de73b6bc7ba49, type: 3}
+  - setting: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

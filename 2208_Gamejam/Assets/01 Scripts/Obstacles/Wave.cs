@@ -6,6 +6,8 @@ public class Wave : Obstacle
 {
     [SerializeField] float limitTime = 5f;
 
+    [SerializeField] private Sprite[] surfboardSprite;
+
     [SerializeField] GameObject surfboard;
     [SerializeField] GameObject waveObj;
 
@@ -16,14 +18,16 @@ public class Wave : Obstacle
 
     protected override void OnAwke()
     {
-
         if (!surfboard)
             surfboard = transform.GetChild(0).gameObject;
         if (!waveObj)
             waveObj = transform.GetChild(1).gameObject;
 
         waveObj.GetComponent<WaveObj>().wave = this;
-        waveObj.GetComponent<WaveObj>().damage = new InstantDeath();
+        waveObj.GetComponent<WaveObj>().damage = new InstantDeath(() =>
+        {
+            deathCamera.SetActive(true);
+        });
 
         _surfboardOriPos = surfboard.transform.position;
         _waveOriPos = waveObj.transform.position;
@@ -55,6 +59,7 @@ public class Wave : Obstacle
         if (appear)
         {
             surfboard.transform.position = _surfboardOriPos;
+            surfboard.GetComponent<SpriteRenderer>().sprite = surfboardSprite[RandomUtilities.Random(0, surfboardSprite.Length)];
             waveObj.transform.position = _waveOriPos;
         }
     }

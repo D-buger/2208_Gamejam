@@ -47,7 +47,11 @@ public class Seagull : Obstacle
             }
         };
 
-        damage = new JustDamage();
+        damage = new JustDamage(()=> 
+        { 
+            deathCamera.SetActive(true);
+
+        });
         _target = SystemManager.Instance.CastlePos;
 
         _seagullAllAction += () => this.SetAppear(true);

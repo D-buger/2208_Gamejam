@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(ObstacleTag))]
 public abstract class Obstacle : MonoBehaviour
 {
+    [SerializeField] protected GameObject deathCamera;
+
     [SerializeField] protected WarningSign warning;
 
     [SerializeField] protected FloatStorage appearTime;

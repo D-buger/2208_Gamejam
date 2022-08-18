@@ -57,6 +57,7 @@ public class InputSystem : MonoBehaviour
             SetCollObj();
 
             _rayColliderObject?.MouseUp(MousePos);
+            GameManager.Instance.ChangeCursorToDefense(false);
 
             _rayColliderObject = null;
             _rayColliderTag = null;

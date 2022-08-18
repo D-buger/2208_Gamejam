@@ -12,26 +12,31 @@ public class Crab : Obstacle
     [SerializeField] private float speed = 1;
     [SerializeField] private float anotherCrabAppearTiming = 20;
 
-    [SerializeField] private Sprite grabbedSprite;
-
+    private Animator _anim;
     private Vector2 _target;
-    private Sprite oriSprite;
+
+    private bool _isGoBack = false;
 
     protected override void OnAwke()
     {
         crabInAction = null;
         if (anotherAppearedTime == 0)
             anotherAppearedTime = -2;
+        _anim = GetComponent<Animator>();
     }
 
     protected override void Start()
     {
         base.Start();
-        oriSprite = _renderer.sprite;
-        damage = new InstantDeath();
+        _isGoBack = false;
+        damage = new InstantDeath(() =>
+        {
+            deathCamera.SetActive(true);
+        });
         _target = new Vector2(SystemManager.Instance.CastlePos.x, transform.position.y);
+        _anim.SetBool("isGrabbed", false);
 
-        if(crabInAction?.GetInvocationList() == null)
+        if (crabInAction?.GetInvocationList() == null)
         {
             if (anotherAppearedTime == -2)
             {
@@ -66,7 +71,15 @@ public class Crab : Obstacle
 
     public override void Moving()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
+        if (!_isGoBack)
+            transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
+        else
+        {
+            if (Vector2.Distance(transform.position, oriPos) < 0.5f)
+                _isGoBack = false;
+            transform.position = Vector3.MoveTowards(transform.position, oriPos, speed * 10f * Time.deltaTime);
+        }
+
     }
 
 
@@ -83,18 +96,18 @@ public class Crab : Obstacle
         float min = mouseDownPos.x > oriPos.x ? oriPos.x : mouseDownPos.x;
         float max = mouseDownPos.x < oriPos.x ? oriPos.x : mouseDownPos.x;
         transform.position = new Vector2(Mathf.Clamp(mousePos.x, min, max), transform.position.y);
-        _renderer.sprite = grabbedSprite;
+        _anim.SetBool("isGrabbed", true);
     }
 
     public override void MouseUp(Vector2 mousePos)
     {
         isPlay = true;
         GameManager.Instance.ChangeCursorToDefense(false);
-        _renderer.sprite = oriSprite;
+        _anim.SetBool("isGrabbed", false);
     }
 
     public override void AfterDamage()
     {
-
+        _isGoBack = true;
     }
 }

@@ -30,12 +30,17 @@ public class BeachBall : Obstacle
     protected override void OnAwke()
     {
         isAppearOne = false;
+        _isBounce = false;
     }
 
     protected override void Start()
     {
         base.Start();
-        damage = new JustDamage();
+        damage = new JustDamage(() =>
+        {
+            _renderer.enabled = true;
+            deathCamera.SetActive(true);
+        });
         curvePointVec = new Vector2[3];
 
         curvePointVec[0] = transform.position;
@@ -91,6 +96,7 @@ public class BeachBall : Obstacle
     }
     public override void OnDrag(Vector2 mousePos)
     {
+        GameManager.Instance.ChangeCursorToDrag(true);
         if (SystemManager.Instance.input.DraggedTime < draggedLimitTime && !_isBounce && !SystemManager.Instance.input.DraggedPos.Equals(Vector2.zero))
         {
             _isBounce = true;
@@ -107,7 +113,8 @@ public class BeachBall : Obstacle
 
     public override void AfterDamage()
     {
-        SetAppear(false);
+        if(!SystemManager.Instance.isGameOver)
+            SetAppear(false);
         isAppearOne = false;
     }
 }
