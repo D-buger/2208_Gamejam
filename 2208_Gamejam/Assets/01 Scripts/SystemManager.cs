@@ -8,9 +8,11 @@ public class SystemManager : SingletonBehavior<SystemManager>
     public readonly static string CASTLE_TAG = "Castle";
     public readonly static string GET_BEST_SCORE = "bestScore";
 
-    [SerializeField]private UIManager _ui;
+    [SerializeField]private UIManager ui;
     public InputSystem input;
     public Timer timer;
+
+    public Effect effect;
 
     [SerializeField]
     public Snack snack;
@@ -24,14 +26,19 @@ public class SystemManager : SingletonBehavior<SystemManager>
     [SerializeField] private GameObject gameOverPanel;
 
     [SerializeField] private GameObject deathCamParent;
-    private GameObject[] deathCams;
+    private GameObject[] _deathCams;
+
+    [SerializeField] private AudioClip castleHitSound;
+
+
+    private AudioSource _audioSource;
     public int RemainedBucket
     {
         get => remainedBucket;
         set
         {
             remainedBucket = value;
-            _ui.SetBucketImage(remainedBucket);
+            ui.SetBucketImage(remainedBucket);
         }
     }
     [SerializeField] private int remainedHP = 3;
@@ -41,7 +48,9 @@ public class SystemManager : SingletonBehavior<SystemManager>
         set
         {
             remainedHP = value;
-            _ui.SetHpImage(remainedHP);
+            _audioSource.clip = castleHitSound;
+            _audioSource.Play();
+            ui.SetHpImage(remainedHP);
             if (remainedHP <= 0)
             {
                 isGameOver = true;
@@ -75,18 +84,18 @@ public class SystemManager : SingletonBehavior<SystemManager>
     protected override void OnAwake()
     {
         Time.timeScale = 1;
-        timer = new Timer(_ui.SetTimerText);
+        timer = new Timer(ui.SetTimerText);
         _castle = GameObject.FindGameObjectWithTag(CASTLE_TAG);
         CastlePos = _castle.transform.position;
         if (!bucket)
             bucket = _castle.transform.GetChild(0).gameObject;
         bucket.SetActive(false);
         if (!input)
-            GetComponent<InputSystem>();
-
-        deathCams = new GameObject[deathCamParent.transform.childCount];
-        for (int i = 0; i < deathCams.Length; i++)
-            deathCams[i] = deathCamParent.transform.GetChild(i).gameObject;
+            input = GetComponent<InputSystem>();
+        _audioSource = GetComponent<AudioSource>();
+        _deathCams = new GameObject[deathCamParent.transform.childCount];
+        for (int i = 0; i < _deathCams.Length; i++)
+            _deathCams[i] = deathCamParent.transform.GetChild(i).gameObject;
     }
     private void Update()
     {
@@ -105,7 +114,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     public void DisableAllDeathCams()
     {
-        foreach (GameObject obj in deathCams)
+        foreach (GameObject obj in _deathCams)
         {
             obj.SetActive(false);
         }
@@ -120,8 +129,8 @@ public class SystemManager : SingletonBehavior<SystemManager>
             PlayerPrefs.SetFloat(GET_BEST_SCORE, timer.GetGameTime);
         }
 
-        _ui.SetGameOverBestScoreText();
-        _ui.SetGameOverNowScoreText(timer.GetGameTime);
+        ui.SetGameOverBestScoreText();
+        ui.SetGameOverNowScoreText(timer.GetGameTime);
         gameOverPanel.SetActive(true);
         gameOverPanel.transform.parent.gameObject.SetActive(true);
     }

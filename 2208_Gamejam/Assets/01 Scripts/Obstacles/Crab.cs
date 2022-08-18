@@ -12,6 +12,8 @@ public class Crab : Obstacle
     [SerializeField] private float speed = 1;
     [SerializeField] private float anotherCrabAppearTiming = 20;
 
+    [SerializeField] private AudioClip crabClickSound;
+
     private Animator _anim;
     private Vector2 _target;
 
@@ -59,7 +61,8 @@ public class Crab : Obstacle
     {
         if (anotherAppearedTime <= 0)
         {
-            crabInAction.Invoke();
+            crabInAction?.Invoke();
+            crabInAction = null;
             anotherAppearedTime = anotherAppearedTime <= 0 ? appearedTime : anotherAppearedTime;
         }
 
@@ -89,6 +92,7 @@ public class Crab : Obstacle
         mouseDownPos = mousePos;
         isPlay = false;
         GameManager.Instance.ChangeCursorToDefense(true);
+        SetAudioAndPlay(crabClickSound);
     }
 
     public override void OnDrag(Vector2 mousePos)

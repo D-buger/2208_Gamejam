@@ -11,12 +11,15 @@ public class GameManager : SingletonBehavior<GameManager>
 
     [SerializeField]private Settings setting;
 
-    private Vector2 _cursorHotspot = new Vector2(0.45f, 0f);
+    public float CursorSize { get; private set; }
+    public readonly Vector2 cursorHotspot = new Vector2(0.45f, 0f);
 
     protected override void OnAwake()
     {
         if(!setting)
             setting = GameObject.FindGameObjectWithTag("Settings").GetComponent<Settings>();
+
+        CursorSize = defaultCursorTexture.width;
     }
 
     private void Start()
@@ -44,16 +47,16 @@ public class GameManager : SingletonBehavior<GameManager>
     public void ChangeCursorToDefense(bool isCursorDefense)
     {
         if(isCursorDefense)
-            Cursor.SetCursor(defenseCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
+            Cursor.SetCursor(defenseCursorTexture, cursorHotspot, CursorMode.ForceSoftware);
         else
-            Cursor.SetCursor(defaultCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
+            Cursor.SetCursor(defaultCursorTexture, cursorHotspot, CursorMode.ForceSoftware);
     }
 
     public void ChangeCursorToDrag(bool isCursorDrag)
     {
         if (isCursorDrag)
-            Cursor.SetCursor(dragCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
+            Cursor.SetCursor(dragCursorTexture, cursorHotspot, CursorMode.ForceSoftware);
         else
-            Cursor.SetCursor(defaultCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
+            Cursor.SetCursor(defaultCursorTexture, cursorHotspot, CursorMode.ForceSoftware);
     }
 }

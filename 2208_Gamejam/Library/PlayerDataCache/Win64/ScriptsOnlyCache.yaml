@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AnimatedEntry
     - BeachBall
     - Crab
+    - Effect
     - GameManager
     - InfinityScrolling
     - InputSystem
@@ -44,8 +45,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -59,6 +62,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.ToggleGroup
@@ -119,11 +123,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4138}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 5342}
+      Script: {instanceID: 5344}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,7 +203,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,9 +249,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
-    - Class: 104
+    - Class: 91
       Script: {instanceID: 0}
-    - Class: 111
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1486}
@@ -263,6 +269,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1792}
     - Class: 114
       Script: {instanceID: 1878}
+    - Class: 114
+      Script: {instanceID: 2470}
     - Class: 114
       Script: {instanceID: 2648}
     - Class: 114
@@ -290,23 +298,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 4014}
+      Script: {instanceID: 4016}
     - Class: 114
-      Script: {instanceID: 4116}
+      Script: {instanceID: 4118}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4138}
     - Class: 114
-      Script: {instanceID: 4306}
+      Script: {instanceID: 4308}
     - Class: 114
-      Script: {instanceID: 4724}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 5074}
+      Script: {instanceID: 5076}
     - Class: 114
-      Script: {instanceID: 5202}
+      Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 5232}
+      Script: {instanceID: 5234}
     - Class: 114
-      Script: {instanceID: 5508}
+      Script: {instanceID: 5510}
+    - Class: 114
+      Script: {instanceID: 24450}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -574,7 +584,7 @@ ScriptsOnlyBuild:
     className: ObstacleTag
   - hash:
       serializedVersion: 2
-      Hash: f35193d258c3c05d1bab2cdc9c43fe6d
+      Hash: bc41c639cd4441baee887e5c0ad45934
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BeachBall
@@ -640,7 +650,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 74335a185ad057db810232e84da3d4f5
+      Hash: 7255ad0978befb3a482133770f945286
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SystemManager
@@ -688,7 +698,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: e88a649847acae8e1fa20ef4e67181e5
+      Hash: fb1edf7d1292c90bd5963823ffd31e84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Seagull
@@ -754,7 +764,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 3faacb5980ebda50414a0098b8d9bb48
+      Hash: 97fa0b9805274b23f694b84b0025b5bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crab
@@ -898,7 +908,7 @@ ScriptsOnlyBuild:
     className: WarningSign
   - hash:
       serializedVersion: 2
-      Hash: f7693e9e7f5b72a9c23ab8faba22347e
+      Hash: acf7bdbec6b827e771e7f06d11791220
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Wave
@@ -956,6 +966,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Effect
   platform: 19
   scenePathNames:
   - Assets/00 Scenes/00 Title.unity

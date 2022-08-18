@@ -22,6 +22,9 @@ public class BeachBall : Obstacle
     [SerializeField]
     private float disappearTimeAfterDrag = 3f;
 
+    [SerializeField]
+    private AudioClip beachballHitSound;
+
     private Vector2[] _curveVec;
 
     private bool _isBounce = false;
@@ -103,6 +106,7 @@ public class BeachBall : Obstacle
             _bounceVec = SystemManager.Instance.input.DraggedPos;
             _time = 0;
             isAppearOne = false;
+            SystemManager.Instance.effect.BeachballEffect();
         }
     }
 
@@ -115,6 +119,7 @@ public class BeachBall : Obstacle
     {
         if(!SystemManager.Instance.isGameOver)
             SetAppear(false);
+        SetAudioAndPlay(beachballHitSound);
         isAppearOne = false;
     }
 }

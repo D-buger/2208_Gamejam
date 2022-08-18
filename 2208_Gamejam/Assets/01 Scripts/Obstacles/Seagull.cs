@@ -20,6 +20,8 @@ public class Seagull : Obstacle
     [Range(0, 100)]
     [SerializeField] private int percentToAppearAnother;
 
+    [SerializeField] private AudioClip seagullSatisfiedSound;
+
     private Vector2 _target;
 
     private static float _appearedTime;
@@ -28,11 +30,13 @@ public class Seagull : Obstacle
     private bool _isGoBackOri = false;
     private bool _isFadeOut = false;
 
+    private Animator effectAnimator;
     protected override void OnAwke()
     {
         _seagullOutAction = null;
         _seagullAllAction = null;
         _seagullInAction = null;
+        effectAnimator = GetComponentInChildren<Animator>();
     }
 
     protected override void Start()
@@ -107,6 +111,8 @@ public class Seagull : Obstacle
 
     public void SetDisable()
     {
+        effectAnimator.SetTrigger("effectTrigger");
+        SetAudioAndPlay(seagullSatisfiedSound);
         _renderer.sprite = seagullPassSprite;
         _coll.enabled = false;
         _isFadeOut = true;

@@ -13,6 +13,8 @@ public abstract class Obstacle : MonoBehaviour
     [SerializeField] protected PositionStorage appearPos;
     [SerializeField] protected float delayAfterDamage;
 
+    [SerializeField] protected AudioClip enableSound;
+
     protected IDamgeSystem damage;
     protected Vector2 oriPos;
 
@@ -25,10 +27,13 @@ public abstract class Obstacle : MonoBehaviour
     protected SpriteRenderer _renderer;
     protected Collider2D _coll;
 
+    protected AudioSource audioSource;
+
     private void Awake()
     {
         _renderer = gameObject.GetComponent<SpriteRenderer>();
         _coll = gameObject.GetComponent<Collider2D>();
+        audioSource = gameObject.GetComponent<AudioSource>();
         oriPos = transform.position;
         OnAwke();
     }
@@ -51,16 +56,25 @@ public abstract class Obstacle : MonoBehaviour
                 warning.WarningSignEnable();
         }
     }
-
-    protected virtual void TimeToAppear()
-    {
-
-    }
-
     protected virtual void FixedUpdate()
     {
         if(isAppear && isPlay)
             Moving();
+    }
+
+    protected void PlayEnableSound()
+    {
+        if (enableSound)
+        {
+            audioSource.clip = enableSound;
+            audioSource.Play();
+        }
+    }
+
+    protected void SetAudioAndPlay(AudioClip audio)
+    {
+        audioSource.clip = audio;
+        audioSource.Play();
     }
 
     public abstract void Moving();
@@ -79,6 +93,10 @@ public abstract class Obstacle : MonoBehaviour
             appearedTime = 0;
             disappearedTime = SystemManager.Instance.timer.GetGameTime;
             transform.position = oriPos;
+        }
+        else
+        {
+            PlayEnableSound();
         }
     }
 
