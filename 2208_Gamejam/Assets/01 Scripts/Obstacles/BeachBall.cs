@@ -27,9 +27,13 @@ public class BeachBall : Obstacle
     private bool _isBounce = false;
     private Vector2 _bounceVec = Vector2.zero;
 
-    protected override void Start()
+    protected override void OnAwke()
     {
         isAppearOne = false;
+    }
+
+    protected override void Start()
+    {
         base.Start();
         damage = new JustDamage();
         curvePointVec = new Vector2[3];

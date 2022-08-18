@@ -4,17 +4,16 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-//TODO : fadeout 구현 및 제자리 이동하는 모션 추가
 public class Seagull : Obstacle
 {
     private static event UnityAction _seagullOutAction;
     private static event UnityAction _seagullInAction;
-
     private static event UnityAction _seagullAllAction;
 
     private static int appearedSeagullNum = 0;
 
     [SerializeField] private Sprite[] seagullSprite;
+    [SerializeField] private Sprite seagullPassSprite;
     [Space(20)]
     [SerializeField] private float speed = 1;
     [SerializeField] private float moveTimeAfterAppear = 3f;
@@ -26,15 +25,27 @@ public class Seagull : Obstacle
     private static float _appearedTime;
     private static float _disappearedTime;
 
-    protected override void Start()
+    private bool _isGoBackOri = false;
+    private bool _isFadeOut = false;
+
+    protected override void OnAwke()
     {
         _seagullOutAction = null;
         _seagullAllAction = null;
         _seagullInAction = null;
-        base.Start();
-        _seagullOutAction += () => this.SetAppear(false);
-        _seagullOutAction += SetDelegate;
+    }
 
+    protected override void Start()
+    {
+        base.Start();
+        _seagullOutAction += () => 
+        {
+            if (isAppear)
+            {
+                _isGoBackOri = true;
+                _coll.enabled = false;
+            }
+        };
 
         damage = new JustDamage();
         _target = SystemManager.Instance.CastlePos;
@@ -42,11 +53,6 @@ public class Seagull : Obstacle
         _seagullAllAction += () => this.SetAppear(true);
 
         SetDelegate();
-    }
-
-    private void GoBackToOriPosAndDisable()
-    {
-        this.SetAppear(false);
     }
 
     protected override void Update()
@@ -60,20 +66,46 @@ public class Seagull : Obstacle
         }
     }
 
+    private float _distPerc = 0;
+    private float _distColor = 0;
     public override void Moving()
     {
-        if(SystemManager.Instance.timer.GetGameTime - _appearedTime > moveTimeAfterAppear)
+        if (_isGoBackOri)
+        {
+            _distPerc += Time.deltaTime;
+            if(Vector2.Distance(transform.position, oriPos) <= 0.5f)
+            {
+                _isGoBackOri = false;
+                _isFadeOut = true;
+                _distPerc = 0;
+            }
+            transform.position = Vector2.Lerp(transform.position, oriPos, _distPerc);
+        }
+        else if (_isFadeOut)
+        {
+            _distColor += Time.deltaTime;
+            if(_renderer.color.a < 0.05f)
+            {
+                _isFadeOut = false;
+                _renderer.color = new Color(_renderer.color.r, _renderer.color.g, _renderer.color.b, 255);
+                _distColor = 0;
+                SetAppear(false);
+                if (--appearedSeagullNum == 0)
+                {
+                    SetDelegate();
+                }
+            }
+            _renderer.color = new Color(_renderer.color.r, _renderer.color.g, _renderer.color.b, Mathf.Lerp(1, 0, _distColor));
+        }
+        else if(SystemManager.Instance.timer.GetGameTime - _appearedTime > moveTimeAfterAppear)
             transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
     }
 
     public void SetDisable()
     {
-        SetAppear(false);
-
-        if (--appearedSeagullNum == 0)
-        {
-            SetDelegate();
-        }
+        _renderer.sprite = seagullPassSprite;
+        _coll.enabled = false;
+        _isFadeOut = true;
     }
 
     public override void SetAppear(bool isAppear)
@@ -81,6 +113,7 @@ public class Seagull : Obstacle
         if(isAppear)
             _renderer.sprite = seagullSprite[Random.Range(0, seagullSprite.Length)];
         base.SetAppear(isAppear);
+        oriPos = transform.position;
         if (!isAppear)
         {
             _disappearedTime = SystemManager.Instance.timer.GetGameTime;

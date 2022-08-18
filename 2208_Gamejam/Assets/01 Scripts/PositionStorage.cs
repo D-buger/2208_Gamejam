@@ -24,6 +24,6 @@ public class PositionStorage
             _rightUpVec = rightUp.position;
         }
 
-        return _rightUpVec.Equals(Vector2.zero) ? _leftDownVec : new Vector2(Random.Range(_leftDownVec.x, _rightUpVec.x), Random.Range(_leftDownVec.y, _rightUpVec.y));
+        return _rightUpVec.Equals(Vector2.zero) ? _leftDownVec : new Vector2(RandomUtilities.Random(_leftDownVec.x, _rightUpVec.x), RandomUtilities.Random(_leftDownVec.y, _rightUpVec.y));
     }
 }

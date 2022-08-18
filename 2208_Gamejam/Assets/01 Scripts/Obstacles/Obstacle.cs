@@ -28,7 +28,11 @@ public abstract class Obstacle : MonoBehaviour
         _renderer = gameObject.GetComponent<SpriteRenderer>();
         _coll = gameObject.GetComponent<Collider2D>();
         oriPos = transform.position;
+        OnAwke();
     }
+
+    protected abstract void OnAwke(); 
+
     protected virtual void Start()
     {
         SetAppear(false);

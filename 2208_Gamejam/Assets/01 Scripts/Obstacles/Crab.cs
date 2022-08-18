@@ -10,16 +10,24 @@ public class Crab : Obstacle
 
     [Space(20)]
     [SerializeField] private float speed = 1;
-    [SerializeField] private float anotherCrabAppearTiming = 240;
+    [SerializeField] private float anotherCrabAppearTiming = 20;
+
+    [SerializeField] private Sprite grabbedSprite;
 
     private Vector2 _target;
+    private Sprite oriSprite;
+
+    protected override void OnAwke()
+    {
+        crabInAction = null;
+        if (anotherAppearedTime == 0)
+            anotherAppearedTime = -2;
+    }
 
     protected override void Start()
     {
-        crabInAction = null;
-        anotherAppearedTime = -2;
-
         base.Start();
+        oriSprite = _renderer.sprite;
         damage = new InstantDeath();
         _target = new Vector2(SystemManager.Instance.CastlePos.x, transform.position.y);
 
@@ -31,23 +39,26 @@ public class Crab : Obstacle
                 if (Random.Range(0, 2) == 1)
                 {
                     crabInAction += () => this.SetAppear(true);
+                    anotherAppearedTime = 0;
                 }
             }
             else if (anotherAppearedTime == -1)
             {
                 crabInAction += () => this.SetAppear(true);
+                anotherAppearedTime = 0;
             }
         }
     }
 
     protected override void Update()
     {
-        if (anotherAppearedTime < 0)
+        if (anotherAppearedTime <= 0)
         {
             crabInAction.Invoke();
-            anotherAppearedTime = anotherAppearedTime < 0 ? appearedTime : anotherAppearedTime;
+            anotherAppearedTime = anotherAppearedTime <= 0 ? appearedTime : anotherAppearedTime;
         }
-        else if (!isAppear && SystemManager.Instance.timer.isTimePasses(anotherAppearedTime, anotherCrabAppearTiming))
+
+        if (!isAppear && SystemManager.Instance.timer.isTimePasses(anotherAppearedTime, anotherCrabAppearTiming))
         {
             SetAppear(true);
         }
@@ -72,12 +83,14 @@ public class Crab : Obstacle
         float min = mouseDownPos.x > oriPos.x ? oriPos.x : mouseDownPos.x;
         float max = mouseDownPos.x < oriPos.x ? oriPos.x : mouseDownPos.x;
         transform.position = new Vector2(Mathf.Clamp(mousePos.x, min, max), transform.position.y);
+        _renderer.sprite = grabbedSprite;
     }
 
     public override void MouseUp(Vector2 mousePos)
     {
         isPlay = true;
         GameManager.Instance.ChangeCursorToDefense(false);
+        _renderer.sprite = oriSprite;
     }
 
     public override void AfterDamage()

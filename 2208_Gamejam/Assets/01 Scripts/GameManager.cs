@@ -8,13 +8,20 @@ public class GameManager : SingletonBehavior<GameManager>
     [SerializeField] private Texture2D defaultCursorTexture;
     [SerializeField] private Texture2D defenseCursorTexture;
 
+    [SerializeField]private Settings setting;
+
+    private Vector2 _cursorHotspot = new Vector2(0.45f, 0f);
+
     protected override void OnAwake()
     {
-        if (PlayerPrefs.GetInt("isPlayBefore") == 1)
-        {
-            PlayerPrefs.SetInt("isPlayBefore", 1);
-            SceneManager.LoadScene(2);
-        }
+        if(!setting)
+            setting = GameObject.FindGameObjectWithTag("Settings").GetComponent<Settings>();
+    }
+
+    private void Start()
+    {
+        ChangeCursorToDefense(false);
+        setting.SetFirst();
     }
 
     public void Exit()
@@ -36,8 +43,8 @@ public class GameManager : SingletonBehavior<GameManager>
     public void ChangeCursorToDefense(bool isCursorDefense)
     {
         if(isCursorDefense)
-            Cursor.SetCursor(defenseCursorTexture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(defenseCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
         else
-            Cursor.SetCursor(defaultCursorTexture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(defaultCursorTexture, _cursorHotspot, CursorMode.ForceSoftware);
     }
 }

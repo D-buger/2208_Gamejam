@@ -28,3 +28,11 @@ public class InstantDeath : IDamgeSystem
         }
     }
 }
+
+public class NothingHappened : IDamgeSystem
+{
+    public void DamageToPlayer()
+    {
+
+    }
+}
