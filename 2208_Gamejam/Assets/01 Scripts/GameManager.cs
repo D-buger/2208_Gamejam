@@ -16,10 +16,9 @@ public class GameManager : SingletonBehavior<GameManager>
 
     protected override void OnAwake()
     {
-        if(!setting)
-            setting = GameObject.FindGameObjectWithTag("Settings").GetComponent<Settings>();
-
         CursorSize = defaultCursorTexture.width;
+        if (!setting)
+            setting = GameObject.FindGameObjectWithTag("Settings").GetComponent<Settings>();
     }
 
     private void Start()

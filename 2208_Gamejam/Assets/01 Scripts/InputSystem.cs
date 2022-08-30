@@ -13,6 +13,7 @@ public class InputSystem : MonoBehaviour
     private Obstacle _rayColliderObject;
     private string _rayColliderTag;
 
+#if UNITY_STANDALONE_WIN
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -64,6 +65,11 @@ public class InputSystem : MonoBehaviour
             DraggedTime = 0f;
         }
     }
+#elif UNITY_ANDROID
+
+
+
+#endif
 
     private void SetCollObj()
     {

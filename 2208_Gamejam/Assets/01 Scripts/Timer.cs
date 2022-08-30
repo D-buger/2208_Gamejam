@@ -23,7 +23,7 @@ public class Timer
         realTime = Time.realtimeSinceStartup;
 
         _stopwatch += Time.deltaTime;
-        timeEvent.Invoke(_stopwatch);
+        timeEvent?.Invoke(_stopwatch);
     }
 
     public float GetGameTime => _stopwatch;
