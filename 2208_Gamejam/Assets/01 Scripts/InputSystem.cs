@@ -66,9 +66,10 @@ public class InputSystem : MonoBehaviour
         }
     }
 #elif UNITY_ANDROID
-
-
-
+    private void Update()
+    {
+        
+    }
 #endif
 
     private void SetCollObj()
