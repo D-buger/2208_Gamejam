@@ -18,13 +18,13 @@ public class GameManager : SingletonBehavior<GameManager>
     {
         CursorSize = defaultCursorTexture.width;
         if (!setting)
-            setting = GameObject.FindGameObjectWithTag("Settings").GetComponent<Settings>();
+            setting = GameObject.FindGameObjectWithTag("Settings")?.GetComponent<Settings>();
     }
 
     private void Start()
     {
         ChangeCursorToDefense(false);
-        setting.SetFirst();
+        setting?.SetFirst();
     }
 
     public void Exit()

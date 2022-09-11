@@ -68,7 +68,56 @@ public class InputSystem : MonoBehaviour
 #elif UNITY_ANDROID
     private void Update()
     {
-        
+        Touch touch = Input.GetTouch(0);
+
+        if (touch.phase == TouchPhase.Began)
+        {
+            MousePos = Camera.main.ScreenToWorldPoint(touch.position);
+            OriMousePos = MousePos;
+            RaycastHit2D hit = Physics2D.Raycast(MousePos, Vector2.zero);
+
+            IsDrag = true;
+            DraggedTime = 0;
+
+            if (hit.collider)
+            {
+                if (hit.collider.CompareTag(SystemManager.CASTLE_TAG))
+                    SystemManager.Instance.UseBucket();
+                else
+                {
+                    _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
+                    _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
+
+                    _rayColliderObject.MouseDown(MousePos);
+                }
+            }
+        }
+
+        if(touch.phase == TouchPhase.Moved)
+        {
+            MousePos = Camera.main.ScreenToWorldPoint(touch.position);
+
+            DraggedTime += Time.deltaTime;
+            DraggedPos = (MousePos - OriMousePos).normalized;
+
+            SetCollObj();
+
+            _rayColliderObject?.OnDrag(MousePos);
+        }
+
+        if(touch.phase == TouchPhase.Ended)
+        {
+            MousePos = Camera.main.ScreenToWorldPoint(touch.position);
+            IsDrag = false;
+            SetCollObj();
+
+            _rayColliderObject?.MouseUp(MousePos);
+            GameManager.Instance.ChangeCursorToDefense(false);
+
+            _rayColliderObject = null;
+            _rayColliderTag = null;
+            DraggedTime = 0f;
+        }
     }
 #endif
 
