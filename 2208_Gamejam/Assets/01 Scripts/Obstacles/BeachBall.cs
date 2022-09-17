@@ -12,15 +12,9 @@ public class BeachBall : Obstacle
     [SerializeField]
     private Transform curveTrans;
     private Vector2[] curvePointVec;
-    [SerializeField]
-    private int point;
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private float draggedLimitTime = 1f;
 
     [SerializeField]
-    private float disappearTimeAfterDrag = 3f;
+    private BeachballData data;
 
     [SerializeField]
     private AudioClip beachballHitSound;
@@ -34,6 +28,7 @@ public class BeachBall : Obstacle
     {
         isAppearOne = false;
         _isBounce = false;
+        datas = data;
     }
 
     protected override void Start()
@@ -50,7 +45,7 @@ public class BeachBall : Obstacle
         curvePointVec[1] = curveTrans.position;
         curvePointVec[2] = SystemManager.Instance.CastlePos;
 
-        _curveVec = Util.CurvePointsOfVectors(point, curvePointVec);
+        _curveVec = Util.CurvePointsOfVectors(data.curvePoint, curvePointVec);
 
         warning.beforeSignEnable += () => isAppearOne = true;
         warning.afterSignDisable += () => SetAppear(true);
@@ -67,18 +62,18 @@ public class BeachBall : Obstacle
     private float _time = 0;
     public override void Moving()
     {
-        _time += Time.deltaTime * speed;
+        _time += Time.deltaTime * data.speed;
         if (!_isBounce)
         {
-            transform.position = _curveVec[Mathf.Clamp((int)_time, 0, point)];
+            transform.position = _curveVec[Mathf.Clamp((int)_time, 0, data.curvePoint)];
         }
         else
         {
-            if (_time > disappearTimeAfterDrag)
+            if (_time > data.disappearTimeAfterDrag)
                 SetAppear(false);
             else
             {
-                transform.Translate(_bounceVec * Time.deltaTime * speed * 1.5f);
+                transform.Translate(_bounceVec * Time.deltaTime * data.speed * 1.5f);
             }
         }
     }
@@ -100,7 +95,7 @@ public class BeachBall : Obstacle
     public override void OnDrag(Vector2 mousePos)
     {
         GameManager.Instance.ChangeCursorToDrag(true);
-        if (SystemManager.Instance.input.DraggedTime < draggedLimitTime && !_isBounce && !SystemManager.Instance.input.DraggedPos.Equals(Vector2.zero))
+        if (SystemManager.Instance.input.DraggedTime < data.draggedLimitTime && !_isBounce && !SystemManager.Instance.input.DraggedPos.Equals(Vector2.zero))
         {
             _isBounce = true;
             _bounceVec = SystemManager.Instance.input.DraggedPos;

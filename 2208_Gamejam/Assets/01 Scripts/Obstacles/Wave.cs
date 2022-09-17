@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Wave : Obstacle
 {
-    [SerializeField] float limitTime = 5f;
+    [SerializeField]
+    private WaveData data;
 
     [SerializeField] private Sprite[] surfboardSprite;
 
@@ -18,6 +19,7 @@ public class Wave : Obstacle
 
     protected override void OnAwke()
     {
+        datas = data;
         if (!surfboard)
             surfboard = transform.GetChild(0).gameObject;
         if (!waveObj)
@@ -39,7 +41,7 @@ public class Wave : Obstacle
     {
         base.Start();
         damage = new NothingHappened();
-        warning.remainTime = limitTime;
+        warning.remainTime = data.limitTime;
 
         warning.beforeSignEnable += () => SetAppear(true);
 
@@ -47,7 +49,7 @@ public class Wave : Obstacle
 
     public override void Moving()
     {
-        if(SystemManager.Instance.timer.GetGameTime > (appearedTime + limitTime))
+        if(SystemManager.Instance.timer.GetGameTime > (appearedTime + data.limitTime))
         {
             waveObj.gameObject.SetActive(true);
         }
@@ -67,7 +69,7 @@ public class Wave : Obstacle
 
     public override void MouseDown(Vector2 mousePos)
     {
-        if (SystemManager.Instance.timer.GetGameTime < (appearedTime + limitTime))
+        if (SystemManager.Instance.timer.GetGameTime < (appearedTime + data.limitTime))
         {
             surfboard.gameObject.SetActive(true);
             _isEnableSurfboard = true;

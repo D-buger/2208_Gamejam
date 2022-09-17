@@ -9,9 +9,8 @@ public abstract class Obstacle : MonoBehaviour
 
     [SerializeField] protected WarningSign warning;
 
-    [SerializeField] protected FloatStorage appearTime;
     [SerializeField] protected PositionStorage appearPos;
-    [SerializeField] protected float delayAfterDamage;
+    protected ObstacleData datas;
 
     [SerializeField] protected AudioClip enableSound;
 
@@ -47,7 +46,7 @@ public abstract class Obstacle : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (!isAppear && SystemManager.Instance.timer.isTimePasses(disappearedTime + delayAfterDamage, appearTime.GetRandomFloat()))
+        if (!isAppear && SystemManager.Instance.timer.isTimePasses(disappearedTime + datas.delayAfterDamage, datas.appearTime.GetRandomFloat()))
         {
             appearedTime = SystemManager.Instance.timer.GetGameTime;
             if (!warning)

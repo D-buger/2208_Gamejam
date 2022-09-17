@@ -8,9 +8,8 @@ public class Crab : Obstacle
     private static event UnityAction crabInAction;
     private static float anotherAppearedTime = -2;
 
-    [Space(20)]
-    [SerializeField] private float speed = 1;
-    [SerializeField] private float anotherCrabAppearTiming = 20;
+    [SerializeField]
+    private CrabData data;
 
     [SerializeField] private AudioClip crabClickSound;
 
@@ -21,6 +20,7 @@ public class Crab : Obstacle
 
     protected override void OnAwke()
     {
+        datas = data;
         crabInAction = null;
         if (anotherAppearedTime == 0)
             anotherAppearedTime = -2;
@@ -66,7 +66,7 @@ public class Crab : Obstacle
             anotherAppearedTime = anotherAppearedTime <= 0 ? appearedTime : anotherAppearedTime;
         }
 
-        if (!isAppear && SystemManager.Instance.timer.isTimePasses(anotherAppearedTime, anotherCrabAppearTiming))
+        if (!isAppear && SystemManager.Instance.timer.isTimePasses(anotherAppearedTime, data.crabAppearTiming))
         {
             SetAppear(true);
         }
@@ -75,12 +75,12 @@ public class Crab : Obstacle
     public override void Moving()
     {
         if (!_isGoBack)
-            transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, _target, data.speed * Time.deltaTime);
         else
         {
             if (Vector2.Distance(transform.position, oriPos) < 0.5f)
                 _isGoBack = false;
-            transform.position = Vector3.MoveTowards(transform.position, oriPos, speed * 10f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, oriPos, data.speed * 10f * Time.deltaTime);
         }
 
     }

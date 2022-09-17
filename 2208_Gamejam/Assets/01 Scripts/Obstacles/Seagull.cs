@@ -14,11 +14,9 @@ public class Seagull : Obstacle
 
     [SerializeField] private Sprite[] seagullSprite;
     [SerializeField] private Sprite seagullPassSprite;
-    [Space(20)]
-    [SerializeField] private float speed = 1;
-    [SerializeField] private float moveTimeAfterAppear = 3f;
-    [Range(0, 100)]
-    [SerializeField] private int percentToAppearAnother;
+
+    [SerializeField]
+    private SeagullData data;
 
     [SerializeField] private AudioClip seagullSatisfiedSound;
 
@@ -36,6 +34,7 @@ public class Seagull : Obstacle
         _seagullOutAction = null;
         _seagullAllAction = null;
         _seagullInAction = null;
+        datas = data;
         effectAnimator = GetComponentInChildren<Animator>();
     }
 
@@ -65,7 +64,7 @@ public class Seagull : Obstacle
 
     protected override void Update()
     {
-        if (_seagullInAction != null && !isAppear && SystemManager.Instance.timer.isTimePasses(_disappearedTime + delayAfterDamage, appearTime.GetRandomFloat()))
+        if (_seagullInAction != null && !isAppear && SystemManager.Instance.timer.isTimePasses(_disappearedTime + data.delayAfterDamage, data.appearTime.GetRandomFloat()))
         {
             _seagullInAction?.Invoke();
             _seagullInAction = null;
@@ -105,8 +104,8 @@ public class Seagull : Obstacle
             }
             _renderer.color = new Color(_renderer.color.r, _renderer.color.g, _renderer.color.b, Mathf.Lerp(1, 0, _distColor));
         }
-        else if(SystemManager.Instance.timer.GetGameTime - _appearedTime > moveTimeAfterAppear)
-            transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
+        else if(SystemManager.Instance.timer.GetGameTime - _appearedTime > data.moveTimeAfterAppear)
+            transform.position = Vector3.MoveTowards(transform.position, _target, data.speed * Time.deltaTime);
     }
 
     public void SetDisable()
@@ -143,7 +142,7 @@ public class Seagull : Obstacle
             appearedSeagullNum = 0;
             foreach (UnityAction action in _seagullAllAction.GetInvocationList())
             {
-                if (Random.Range(0, 99) < percentToAppearAnother)
+                if (Random.Range(0, 99) < data.percentOfAppearAnother)
                 {
                     _seagullInAction += action;
                     appearedSeagullNum++;

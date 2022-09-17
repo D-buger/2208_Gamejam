@@ -129,13 +129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathCamera: {fileID: 0}
   warning: {fileID: 0}
-  appearTime:
-    randomStart: 0
-    randomEnd: 20
   appearPos:
     leftDown: {fileID: 0}
     rightUp: {fileID: 0}
-  delayAfterDamage: 3
   enableSound: {fileID: 0}
   beachballSprite:
   - {fileID: 21300000, guid: a86ed0d4587d83742be80243e805ac00, type: 3}
@@ -143,10 +139,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fdcef6d86c1f7a54ea24d5f3e2557262, type: 3}
   - {fileID: 21300000, guid: 9721f029175daff4f8d6df0d29132586, type: 3}
   curveTrans: {fileID: 0}
-  point: 50
-  speed: 30
-  draggedLimitTime: 2
-  disappearTimeAfterDrag: 10
+  data: {fileID: 11400000, guid: 14e721f956584b040afc9400222b23e9, type: 2}
   beachballHitSound: {fileID: 8300000, guid: abe9aca3dbd7ac64a9131a388fd889bc, type: 3}
 --- !u!82 &-3612374348567895549
 AudioSource:

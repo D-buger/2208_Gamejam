@@ -113,16 +113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathCamera: {fileID: 0}
   warning: {fileID: 0}
-  appearTime:
-    randomStart: 1
-    randomEnd: 0
   appearPos:
     leftDown: {fileID: 0}
     rightUp: {fileID: 0}
-  delayAfterDamage: 0
   enableSound: {fileID: 8300000, guid: 05a555d632ca8584f8841e4db69e93b6, type: 3}
-  speed: 0.5
-  anotherCrabAppearTiming: 90
+  data: {fileID: 11400000, guid: 68c2f5f72757f424490e22fad08379e5, type: 2}
   crabClickSound: {fileID: 0}
 --- !u!61 &1551838309929899774
 BoxCollider2D:

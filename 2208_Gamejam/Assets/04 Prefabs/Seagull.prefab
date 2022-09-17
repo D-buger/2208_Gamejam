@@ -140,13 +140,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathCamera: {fileID: 0}
   warning: {fileID: 0}
-  appearTime:
-    randomStart: 1
-    randomEnd: 5
   appearPos:
     leftDown: {fileID: 0}
     rightUp: {fileID: 0}
-  delayAfterDamage: 3
   enableSound: {fileID: 0}
   seagullSprite:
   - {fileID: 21300000, guid: eaa2e6035ab37f44ba07d3a5b8ae235c, type: 3}
@@ -155,9 +151,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 632644ba3d08c7245a0c03e865dc8c50, type: 3}
   - {fileID: 21300000, guid: 7ea99cf513fc1a949b0c3a6c7d0e15af, type: 3}
   seagullPassSprite: {fileID: 0}
-  speed: 1
-  moveTimeAfterAppear: 3
-  percentToAppearAnother: 50
+  data: {fileID: 11400000, guid: f8d58144e27c84c46a0eec9a6194e5e0, type: 2}
   seagullSatisfiedSound: {fileID: 8300000, guid: f3d2b0bd31151784dad929a1e21d7db3, type: 3}
 --- !u!82 &-5456999475127512904
 AudioSource:
