@@ -14,8 +14,16 @@ public class GameManager : SingletonBehavior<GameManager>
     public float CursorSize { get; private set; }
     public readonly Vector2 cursorHotspot = new Vector2(0.45f, 0f);
 
+
     protected override void OnAwake()
     {
+        if (PlayerPrefs.GetInt("FirstStart") == 1)
+        {
+            PlayerPrefs.SetInt("FirstStart", 0);
+            //聚 彬绊 力老 贸澜 角青
+        }
+
+
         CursorSize = defaultCursorTexture.width;
         if (!setting)
             setting = GameObject.FindGameObjectWithTag("Settings")?.GetComponent<Settings>();
