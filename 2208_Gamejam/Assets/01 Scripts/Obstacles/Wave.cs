@@ -71,6 +71,7 @@ public class Wave : Obstacle
     {
         if (SystemManager.Instance.timer.GetGameTime < (appearedTime + data.limitTime))
         {
+            SystemManager.Instance.playData.SurfBoardNum += 1;
             surfboard.gameObject.SetActive(true);
             _isEnableSurfboard = true;
         }

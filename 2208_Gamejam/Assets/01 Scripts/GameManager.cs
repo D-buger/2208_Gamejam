@@ -14,6 +14,7 @@ public class GameManager : SingletonBehavior<GameManager>
     public float CursorSize { get; private set; }
     public readonly Vector2 cursorHotspot = new Vector2(0.45f, 0f);
 
+    public Datas totalData;
 
     protected override void OnAwake()
     {

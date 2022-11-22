@@ -97,6 +97,7 @@ public class BeachBall : Obstacle
         GameManager.Instance.ChangeCursorToDrag(true);
         if (SystemManager.Instance.input.DraggedTime < data.draggedLimitTime && !_isBounce && !SystemManager.Instance.input.DraggedPos.Equals(Vector2.zero))
         {
+            SystemManager.Instance.playData.BeachBallDraggedNum += 1;
             _isBounce = true;
             _bounceVec = SystemManager.Instance.input.DraggedPos;
             _time = 0;

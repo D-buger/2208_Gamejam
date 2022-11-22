@@ -21,6 +21,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     [SerializeField] private float bucketInvincibilityTime = 5f;
     [SerializeField] private int remainedBucket = 3;
+    private int remainedTotalBucket;
     [SerializeField] private GameObject bucket;
 
     [SerializeField] private GameObject gameOverPanel;
@@ -30,6 +31,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     [SerializeField] private AudioClip castleHitSound;
 
+    public Datas playData;
 
     private AudioSource _audioSource;
     public int RemainedBucket
@@ -83,10 +85,13 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     protected override void OnAwake()
     {
+        playData = new Datas();
+        playData.GameStartNum = 1;
         Time.timeScale = 1;
         timer = new Timer(ui.SetTimerText);
         _castle = GameObject.FindGameObjectWithTag(CASTLE_TAG);
         CastlePos = _castle.transform.position;
+        remainedTotalBucket = remainedBucket;
         if (!bucket)
             bucket = _castle.transform.GetChild(0).gameObject;
         bucket.SetActive(false);
@@ -128,6 +133,10 @@ public class SystemManager : SingletonBehavior<SystemManager>
             gameOverPanel.transform.GetChild(0).gameObject.SetActive(true);
             PlayerPrefs.SetFloat(GET_BEST_SCORE, timer.GetGameTime);
         }
+        playData.GameTotalPlayTime = timer.GetGameTime;
+        playData.TotalUsedGuard = remainedTotalBucket - remainedBucket;
+
+        GameManager.Instance.totalData += playData;
 
         ui.SetGameOverBestScoreText();
         ui.SetGameOverNowScoreText(timer.GetGameTime);

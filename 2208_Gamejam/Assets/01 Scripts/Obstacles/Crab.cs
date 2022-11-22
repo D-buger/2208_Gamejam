@@ -17,7 +17,6 @@ public class Crab : Obstacle
     private Vector2 _target;
 
     private bool _isGoBack = false;
-
     protected override void OnAwke()
     {
         datas = data;
@@ -85,10 +84,11 @@ public class Crab : Obstacle
 
     }
 
-
+    private float draggedStartTime = 0;
     private Vector2 mouseDownPos = Vector2.zero;
     public override void MouseDown(Vector2 mousePos)
     {
+        draggedStartTime = SystemManager.Instance.timer.GetGameTime;
         mouseDownPos = mousePos;
         isPlay = false;
         GameManager.Instance.ChangeCursorToDefense(true);
@@ -97,6 +97,7 @@ public class Crab : Obstacle
 
     public override void OnDrag(Vector2 mousePos)
     {
+
         float min = mouseDownPos.x > oriPos.x ? oriPos.x : mouseDownPos.x;
         float max = mouseDownPos.x < oriPos.x ? oriPos.x : mouseDownPos.x;
         transform.position = new Vector2(Mathf.Clamp(mousePos.x, min, max), transform.position.y);
@@ -105,6 +106,7 @@ public class Crab : Obstacle
 
     public override void MouseUp(Vector2 mousePos)
     {
+        SystemManager.Instance.playData.CrabDraggedTime += SystemManager.Instance.timer.GetGameTime - draggedStartTime;
         isPlay = true;
         GameManager.Instance.ChangeCursorToDefense(false);
         _anim.SetBool("isGrabbed", false);

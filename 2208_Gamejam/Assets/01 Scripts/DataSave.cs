@@ -1,18 +1,20 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataSave : MonoBehaviour
+public static class DataSave 
 {
-    // Start is called before the first frame update
-    void Start()
+    public static void LoadData(out Datas data)
     {
-        
+
+        data = new Datas();
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void SaveData(this Datas data)
     {
-        
+
     }
+
+
 }

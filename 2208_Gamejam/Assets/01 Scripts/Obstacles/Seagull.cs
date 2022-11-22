@@ -131,6 +131,7 @@ public class Seagull : Obstacle
 
     public override void MouseDown(Vector2 mousePos)
     {
+        SystemManager.Instance.playData.SeagullTouchNum += 1;
         _coll.enabled = false;
         SystemManager.Instance.snack.GetSnack(this.transform);
     }
