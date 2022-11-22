@@ -31,7 +31,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     [SerializeField] private AudioClip castleHitSound;
 
-    public Datas playData;
+    public Datas playData = new Datas();
 
     private AudioSource _audioSource;
     public int RemainedBucket
@@ -85,7 +85,6 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     protected override void OnAwake()
     {
-        playData = new Datas();
         playData.GameStartNum = 1;
         Time.timeScale = 1;
         timer = new Timer(ui.SetTimerText);
