@@ -16,4 +16,4 @@ MonoBehaviour:
     randomStart: 1
     randomEnd: 5
   delayAfterDamage: 3
-  limitTime: 5
+  limitTime: 3

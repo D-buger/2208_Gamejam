@@ -17,6 +17,6 @@ MonoBehaviour:
     randomEnd: 20
   delayAfterDamage: 3
   curvePoint: 50
-  speed: 30
-  draggedLimitTime: 2
+  speed: 45
+  draggedLimitTime: 5
   disappearTimeAfterDrag: 10
