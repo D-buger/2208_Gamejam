@@ -66,9 +66,12 @@ public class InputSystem : MonoBehaviour
         }
     }
 #elif UNITY_ANDROID
+
+    Touch touch;
     private void Update()
     {
-        Touch touch = Input.GetTouch(0);
+        if (Input.touchCount > 0)
+            touch = Input.GetTouch(0);
 
         if (touch.phase == TouchPhase.Began)
         {

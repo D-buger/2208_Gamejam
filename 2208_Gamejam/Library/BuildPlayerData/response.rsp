@@ -10,6 +10,7 @@
 -a="C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\PlayerScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll"
 -a="C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\PlayerScriptAssemblies\Unity.2D.Animation.Runtime.dll"
 -a="C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\PlayerScriptAssemblies\Unity.2D.Common.Runtime.dll"
+-a="C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\PlayerScriptAssemblies\Google.Play.Games.dll"
 -a="C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\PlayerScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll"
 -a="C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll"
 -s="C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Data\Managed\UnityEngine"

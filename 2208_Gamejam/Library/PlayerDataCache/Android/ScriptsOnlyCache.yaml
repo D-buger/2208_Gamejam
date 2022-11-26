@@ -3,22 +3,24 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AnimatedEntry
     - BeachBall
+    - BeachballData
     - Crab
+    - CrabData
     - Effect
     - GameManager
     - InfinityScrolling
     - InputSystem
-    - LoadingScene
     - ObstacleSystem
     - ObstacleTag
     - Seagull
+    - SeagullData
     - Settings
     - Snack
     - Snacks
     - SystemManager
-    - Title
     - WarningSign
     - Wave
+    - WaveData
     - WaveObj
     - WavingText
     Unity.2D.Animation.Editor.dll:
@@ -34,6 +36,9 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
+    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -66,7 +71,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ToggleGroup
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/00 Scenes/00 Title.unity:
+    Assets/00 Scenes/DataTestScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -80,161 +85,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1486}
-    - Class: 114
-      Script: {instanceID: 1554}
-    - Class: 114
-      Script: {instanceID: 1620}
-    - Class: 114
-      Script: {instanceID: 1756}
-    - Class: 114
-      Script: {instanceID: 1768}
-    - Class: 114
-      Script: {instanceID: 1792}
-    - Class: 114
-      Script: {instanceID: 1878}
-    - Class: 114
-      Script: {instanceID: 2286}
-    - Class: 114
-      Script: {instanceID: 2728}
-    - Class: 114
-      Script: {instanceID: 2900}
-    - Class: 114
-      Script: {instanceID: 2952}
-    - Class: 114
-      Script: {instanceID: 3138}
-    - Class: 114
-      Script: {instanceID: 3390}
-    - Class: 114
-      Script: {instanceID: 3490}
-    - Class: 114
-      Script: {instanceID: 3510}
-    - Class: 114
-      Script: {instanceID: 3612}
-    - Class: 114
-      Script: {instanceID: 3764}
-    - Class: 114
-      Script: {instanceID: 3924}
-    - Class: 114
-      Script: {instanceID: 4138}
-    - Class: 114
-      Script: {instanceID: 4940}
-    - Class: 114
-      Script: {instanceID: 5346}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
-      Script: {instanceID: 0}
-    Assets/00 Scenes/01 Intro.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    Assets/00 Scenes/02 LoadScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1554}
-    - Class: 114
-      Script: {instanceID: 1878}
-    - Class: 114
-      Script: {instanceID: 2728}
-    - Class: 114
-      Script: {instanceID: 2900}
-    - Class: 114
-      Script: {instanceID: 2938}
-    - Class: 114
-      Script: {instanceID: 2952}
-    - Class: 114
-      Script: {instanceID: 3138}
-    - Class: 114
-      Script: {instanceID: 3390}
-    - Class: 114
-      Script: {instanceID: 3764}
-    - Class: 114
-      Script: {instanceID: 4138}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/00 Scenes/03 InGame.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -259,69 +109,83 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1498}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 1756}
+      Script: {instanceID: 1772}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 1784}
     - Class: 114
-      Script: {instanceID: 1792}
+      Script: {instanceID: 1808}
     - Class: 114
-      Script: {instanceID: 1878}
+      Script: {instanceID: 1898}
     - Class: 114
-      Script: {instanceID: 2470}
+      Script: {instanceID: 2094}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2322}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2728}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2952}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3010}
     - Class: 114
-      Script: {instanceID: 3330}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 3390}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3490}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3646}
+      Script: {instanceID: 3414}
     - Class: 114
-      Script: {instanceID: 3764}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 3924}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 4016}
+      Script: {instanceID: 3600}
     - Class: 114
-      Script: {instanceID: 4118}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 4138}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 4128}
     - Class: 114
-      Script: {instanceID: 4834}
+      Script: {instanceID: 4232}
     - Class: 114
-      Script: {instanceID: 5078}
+      Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 5206}
+      Script: {instanceID: 4432}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 4862}
     - Class: 114
-      Script: {instanceID: 5512}
+      Script: {instanceID: 4972}
+    - Class: 114
+      Script: {instanceID: 5080}
+    - Class: 114
+      Script: {instanceID: 5222}
+    - Class: 114
+      Script: {instanceID: 5352}
+    - Class: 114
+      Script: {instanceID: 5382}
+    - Class: 114
+      Script: {instanceID: 5494}
+    - Class: 114
+      Script: {instanceID: 5498}
+    - Class: 114
+      Script: {instanceID: 5666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -441,10 +305,28 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.Play.Games.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: NearbyHelperObject
+  - hash:
+      serializedVersion: 2
+      Hash: e7d150f9370e152c837a2cb181380bab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CrabData
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a2908ef0fd2927cc0ff58fec1cb8053c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstacleData
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -543,6 +425,18 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: ee261f2e944c751c409f3d01f3afe409
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SeagullData
+  - hash:
+      serializedVersion: 2
+      Hash: 1bafecba13ef5bd85fa763afb6b80278
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaveData
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
@@ -591,7 +485,7 @@ ScriptsOnlyBuild:
     className: ObstacleTag
   - hash:
       serializedVersion: 2
-      Hash: bc41c639cd4441baee887e5c0ad45934
+      Hash: e28f99f68e98ab56a0444207009c135e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BeachBall
@@ -705,7 +599,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: fb1edf7d1292c90bd5963823ffd31e84
+      Hash: 03dc40bcb00d9cbd6e534041e61a3209
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Seagull
@@ -771,7 +665,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 97fa0b9805274b23f694b84b0025b5bb
+      Hash: e10ca46d3b795794e152606164575495
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crab
@@ -817,6 +711,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.Play.Games.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: PlayGamesHelperObject
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -921,7 +821,7 @@ ScriptsOnlyBuild:
     className: WarningSign
   - hash:
       serializedVersion: 2
-      Hash: acf7bdbec6b827e771e7f06d11791220
+      Hash: 77c943f8cc44308f8bbbf7abd6dab0bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Wave
@@ -931,6 +831,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 4015301674e4ba3015a86bcfe9868403
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeachballData
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -981,8 +887,5 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 13
   scenePathNames:
-  - Assets/00 Scenes/00 Title.unity
-  - Assets/00 Scenes/01 Intro.unity
-  - Assets/00 Scenes/02 LoadScene.unity
-  - Assets/00 Scenes/03 InGame.unity
-  playerPath: C:/Users/soo/Desktop/2208_gamejam/build
+  - Assets/00 Scenes/DataTestScene.unity
+  playerPath: C:/Users/soo/Desktop/2208_gamejam/balancing/MoBangSi.apk
