@@ -18,4 +18,4 @@ MonoBehaviour:
   delayAfterDamage: 3
   speed: 4.5
   moveTimeAfterAppear: 3
-  percentOfAppearAnother: 50
+  percentOfAppearAnother: 40
