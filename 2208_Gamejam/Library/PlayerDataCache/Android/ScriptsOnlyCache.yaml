@@ -38,7 +38,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
-    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -111,81 +110,81 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1498}
     - Class: 114
-      Script: {instanceID: 1566}
+      Script: {instanceID: 1698}
     - Class: 114
-      Script: {instanceID: 1632}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 1772}
+      Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 1808}
+      Script: {instanceID: 1940}
     - Class: 114
-      Script: {instanceID: 1898}
+      Script: {instanceID: 2030}
     - Class: 114
-      Script: {instanceID: 2094}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2322}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2514}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 2958}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 3178}
     - Class: 114
-      Script: {instanceID: 3146}
+      Script: {instanceID: 3278}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3346}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3468}
     - Class: 114
-      Script: {instanceID: 3414}
+      Script: {instanceID: 3546}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3608}
     - Class: 114
-      Script: {instanceID: 3580}
+      Script: {instanceID: 3712}
     - Class: 114
-      Script: {instanceID: 3600}
+      Script: {instanceID: 3732}
     - Class: 114
-      Script: {instanceID: 3738}
+      Script: {instanceID: 3870}
     - Class: 114
-      Script: {instanceID: 3858}
+      Script: {instanceID: 3990}
     - Class: 114
-      Script: {instanceID: 4034}
-    - Class: 114
-      Script: {instanceID: 4128}
-    - Class: 114
-      Script: {instanceID: 4232}
+      Script: {instanceID: 4160}
     - Class: 114
       Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 4432}
+      Script: {instanceID: 4358}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 4972}
+      Script: {instanceID: 4558}
     - Class: 114
-      Script: {instanceID: 5080}
+      Script: {instanceID: 4988}
     - Class: 114
-      Script: {instanceID: 5222}
+      Script: {instanceID: 5098}
     - Class: 114
-      Script: {instanceID: 5352}
+      Script: {instanceID: 5206}
     - Class: 114
-      Script: {instanceID: 5382}
+      Script: {instanceID: 5348}
     - Class: 114
-      Script: {instanceID: 5494}
+      Script: {instanceID: 5478}
     - Class: 114
-      Script: {instanceID: 5498}
+      Script: {instanceID: 5508}
     - Class: 114
-      Script: {instanceID: 5666}
+      Script: {instanceID: 5620}
+    - Class: 114
+      Script: {instanceID: 5624}
+    - Class: 114
+      Script: {instanceID: 5792}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -888,4 +887,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/00 Scenes/DataTestScene.unity
-  playerPath: C:/Users/soo/Desktop/2208_gamejam/balancing/MoBangSi.apk
+  playerPath: C:/Users/soo/Desktop/2208_gamejam/balancing/MoBangSi_v2.2.apk
