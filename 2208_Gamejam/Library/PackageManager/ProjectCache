@@ -146,6 +146,7 @@ m_PackageAssets:
         - 9.0.0
         - 9.0.1
         - 10.0.0-pre.1
+        - 10.0.0-pre.2
         compatible:
         - 5.1.0
         - 5.1.1
@@ -364,6 +365,7 @@ m_PackageAssets:
         - 6.0.4
         - 6.0.5
         - 6.0.6
+        - 6.0.7
         - 7.0.0-pre.3
         - 7.0.0-pre.4
         - 7.0.0
@@ -374,7 +376,9 @@ m_PackageAssets:
         - 8.0.0-pre.3
         - 8.0.0
         - 8.0.1
+        - 8.0.2
         - 9.0.0-pre.1
+        - 9.0.0-pre.2
         compatible:
         - 4.2.0
         - 4.3.0
@@ -582,6 +586,7 @@ m_PackageAssets:
         - 9.0.0
         - 9.0.1
         - 10.0.0-pre.1
+        - 10.0.0-pre.2
         compatible:
         - 5.2.0
         - 5.3.0
@@ -896,6 +901,7 @@ m_PackageAssets:
         - 3.0.14
         - 3.0.15
         - 3.0.16
+        - 3.0.17
         compatible:
         - 1.0.2
         - 1.0.6
@@ -929,6 +935,7 @@ m_PackageAssets:
         - 3.0.14
         - 3.0.15
         - 3.0.16
+        - 3.0.17
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -1004,6 +1011,7 @@ m_PackageAssets:
         - 2.0.14
         - 2.0.15
         - 2.0.16
+        - 2.0.17
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1024,7 +1032,8 @@ m_PackageAssets:
         - 2.0.14
         - 2.0.15
         - 2.0.16
-        verified: 2.0.16
+        - 2.0.17
+        verified: 2.0.17
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -1186,14 +1195,20 @@ m_PackageAssets:
         - 1.1.31
         - 1.1.33
         - 1.3.0
+        - 1.3.1
+        - 1.3.2
         - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
         - 1.1.31
         - 1.1.33
         - 1.3.0
+        - 1.3.1
+        - 1.3.2
         - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         verified: 1.1.33
@@ -1357,12 +1372,14 @@ m_PackageAssets:
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
         - 4.0.0-pre.1
         compatible:
         - 3.0.6
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -3481,6 +3498,7 @@ m_PackageAssets:
         - 1.4.3
         - 1.5.2
         - 1.6.0
+        - 1.7.0
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3499,6 +3517,7 @@ m_PackageAssets:
         - 1.4.3
         - 1.5.2
         - 1.6.0
+        - 1.7.0
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest
@@ -3675,6 +3694,7 @@ m_PackageAssets:
         - 8.0.0
         - 8.0.1
         - 9.0.0-pre.1
+        - 9.0.0-pre.2
         compatible:
         - 4.1.0
         - 4.2.0

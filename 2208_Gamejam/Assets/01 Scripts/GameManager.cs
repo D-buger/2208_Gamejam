@@ -21,7 +21,6 @@ public class GameManager : SingletonBehavior<GameManager>
         if (PlayerPrefs.GetInt("FirstStart") == 1)
         {
             PlayerPrefs.SetInt("FirstStart", 0);
-            //聚 彬绊 力老 贸澜 角青
         }
 
 
