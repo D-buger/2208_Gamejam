@@ -112,6 +112,7 @@ public class Seagull : Obstacle
     {
         effectAnimator.SetTrigger("effectTrigger");
         SetAudioAndPlay(seagullSatisfiedSound);
+        _renderer.color = Color.white;
         _renderer.sprite = seagullPassSprite;
         _coll.enabled = false;
         _isFadeOut = true;
@@ -133,6 +134,7 @@ public class Seagull : Obstacle
     {
         SystemManager.Instance.playData.SeagullTouchNum += 1;
         _coll.enabled = false;
+        _renderer.color = Color.red;
         SystemManager.Instance.snack.GetSnack(this.transform);
     }
 
