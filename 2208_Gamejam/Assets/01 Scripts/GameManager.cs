@@ -18,12 +18,6 @@ public class GameManager : SingletonBehavior<GameManager>
 
     protected override void OnAwake()
     {
-        if (PlayerPrefs.GetInt("FirstStart") == 1)
-        {
-            PlayerPrefs.SetInt("FirstStart", 0);
-        }
-
-
         CursorSize = defaultCursorTexture.width;
         if (!setting)
             setting = GameObject.FindGameObjectWithTag("Settings")?.GetComponent<Settings>();

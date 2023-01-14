@@ -112,6 +112,7 @@ public class Seagull : Obstacle
     {
         effectAnimator.SetTrigger("effectTrigger");
         SetAudioAndPlay(seagullSatisfiedSound);
+        _renderer.color = Color.white;
         _renderer.sprite = seagullPassSprite;
         _coll.enabled = false;
         _isFadeOut = true;
@@ -121,6 +122,8 @@ public class Seagull : Obstacle
     {
         if(isAppear)
             _renderer.sprite = seagullSprite[Random.Range(0, seagullSprite.Length)];
+
+        _renderer.color = Color.white;
         base.SetAppear(isAppear);
         oriPos = transform.position;
         if (!isAppear)
@@ -132,6 +135,7 @@ public class Seagull : Obstacle
     public override void MouseDown(Vector2 mousePos)
     {
         SystemManager.Instance.playData.SeagullTouchNum += 1;
+        _renderer.color = Color.red;
         _coll.enabled = false;
         SystemManager.Instance.snack.GetSnack(this.transform);
     }

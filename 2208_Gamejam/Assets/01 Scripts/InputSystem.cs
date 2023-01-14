@@ -91,7 +91,7 @@ public class InputSystem : MonoBehaviour
                     _rayColliderObject = hit.collider.gameObject?.GetComponent<Obstacle>();
                     _rayColliderTag = _rayColliderObject?.GetComponent<ObstacleTag>().Tag;
 
-                    _rayColliderObject.MouseDown(MousePos);
+                    _rayColliderObject?.MouseDown(MousePos);
                 }
             }
         }

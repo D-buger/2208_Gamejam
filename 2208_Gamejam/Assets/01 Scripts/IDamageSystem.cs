@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public interface IDamgeSystem
 {
-    void DamageToPlayer();
+    void DamageToPlayer(Vector2 hitPoint);
 }
 
 public class DamageSystem
@@ -17,12 +17,13 @@ public class DamageSystem
 public class JustDamage : DamageSystem, IDamgeSystem
 {
     public JustDamage(UnityAction d) : base(d) { }
-    public void DamageToPlayer()
+    public void DamageToPlayer(Vector2 hitPoint)
     {
         if (!SystemManager.Instance.IsUseBucket)
         {
             SystemManager.Instance.DisableAllDeathCams();
             deathAction?.Invoke();
+            SystemManager.Instance.CastleHit(hitPoint);
             SystemManager.Instance.ReminedHP--;
         }
     }
@@ -31,7 +32,7 @@ public class JustDamage : DamageSystem, IDamgeSystem
 public class InstantDeath : DamageSystem, IDamgeSystem
 {
     public InstantDeath(UnityAction d) : base(d) { }
-    public void DamageToPlayer()
+    public void DamageToPlayer(Vector2 hitPoint)
     {
         if (!SystemManager.Instance.IsUseBucket)
         {
@@ -44,7 +45,7 @@ public class InstantDeath : DamageSystem, IDamgeSystem
 
 public class NothingHappened : IDamgeSystem
 {
-    public void DamageToPlayer()
+    public void DamageToPlayer(Vector2 hitPoint)
     {
 
     }

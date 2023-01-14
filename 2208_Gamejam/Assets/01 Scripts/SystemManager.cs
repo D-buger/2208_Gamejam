@@ -29,6 +29,9 @@ public class SystemManager : SingletonBehavior<SystemManager>
     [SerializeField] private GameObject deathCamParent;
     private GameObject[] _deathCams;
 
+    [SerializeField]
+    private CastleHitEffect castleHit;
+
     [SerializeField] private AudioClip castleHitSound;
 
     public Datas playData = new Datas();
@@ -62,6 +65,8 @@ public class SystemManager : SingletonBehavior<SystemManager>
     }
 
     private GameObject _castle;
+    private Collider2D _castleColl;
+
     public Vector2 CastlePos { get; private set; }
 
     public bool IsUseBucket { get; private set; } = false;
@@ -89,6 +94,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
         Time.timeScale = 1;
         timer = new Timer(ui.SetTimerText);
         _castle = GameObject.FindGameObjectWithTag(CASTLE_TAG);
+        _castleColl = _castle.GetComponent<Collider2D>();
         CastlePos = _castle.transform.position;
         remainedTotalBucket = remainedBucket;
         if (!bucket)
@@ -115,6 +121,10 @@ public class SystemManager : SingletonBehavior<SystemManager>
             }
         }
     }
+    public void CastleHit(Vector2 hitPoint)
+    {
+        castleHit.HitEffect(hitPoint);
+    }
 
     public void DisableAllDeathCams()
     {
@@ -127,20 +137,21 @@ public class SystemManager : SingletonBehavior<SystemManager>
     public void GameOver()
     {
         Time.timeScale = 0;
+        gameOverPanel.SetActive(true);
+        gameOverPanel.transform.parent.gameObject.SetActive(true);
+        ui.SetGameOverNowScoreText(timer.GetGameTime);
+
         if (PlayerPrefs.GetFloat(GET_BEST_SCORE) < timer.GetGameTime)
         {
             gameOverPanel.transform.GetChild(0).gameObject.SetActive(true);
             PlayerPrefs.SetFloat(GET_BEST_SCORE, timer.GetGameTime);
         }
+        ui.SetGameOverBestScoreText();
+
         playData.GameTotalPlayTime = timer.GetGameTime;
         playData.TotalUsedGuard = remainedTotalBucket - remainedBucket;
 
         GameManager.Instance.totalData += playData;
-
-        ui.SetGameOverBestScoreText();
-        ui.SetGameOverNowScoreText(timer.GetGameTime);
-        gameOverPanel.SetActive(true);
-        gameOverPanel.transform.parent.gameObject.SetActive(true);
     }
 
     public void ChangeScene(string sceneName)

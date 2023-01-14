@@ -8,21 +8,17 @@ public class VideoHandler : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
 
-    private void Start()
-    {
-        if (PlayerPrefs.GetInt("FirstStart") == 0)
-        {
-            GameManager.Instance.ChangeScene(1);
-        }
-    }
-
-
     private void Update()
     {
-        if ((ulong)videoPlayer.frame >= videoPlayer.frameCount - 1)
+        if (videoPlayer.frame > 0 && videoPlayer.isPlaying == false)
         {
-            GameManager.Instance.ChangeScene(1);
+            SkipVideo();
         }
     }
-
+    
+    public void SkipVideo()
+    {
+        PlayerPrefs.SetInt("StartOption", 1);
+        GameManager.Instance.ChangeScene(0);
+    }
 }

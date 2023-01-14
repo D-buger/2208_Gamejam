@@ -103,6 +103,7 @@ public abstract class Obstacle : MonoBehaviour
     public abstract void OnDrag(Vector2 mousePos);
     public abstract void MouseUp(Vector2 mousePos);
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         OnEnter(collision);
@@ -112,7 +113,7 @@ public abstract class Obstacle : MonoBehaviour
     {
         if (collision.CompareTag(SystemManager.CASTLE_TAG))
         {
-            damage.DamageToPlayer();
+            damage.DamageToPlayer(_coll.ClosestPoint(collision.gameObject.transform.position));
             AfterDamage();
         }
     }

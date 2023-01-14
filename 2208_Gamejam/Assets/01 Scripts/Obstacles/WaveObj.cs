@@ -54,7 +54,7 @@ public class WaveObj : MonoBehaviour
         else if (collision.transform.CompareTag(SystemManager.CASTLE_TAG))
         {
             _isGoBack = true;
-            damage.DamageToPlayer();
+            damage.DamageToPlayer(Vector2.zero);
         }
     }
 }
