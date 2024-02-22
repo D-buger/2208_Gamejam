@@ -1,0 +1,4 @@
+#Fri Mar 03 00:20:53 KST 2023
+base.0=C\:\\Users\\soo\\Desktop\\2208_gamejam\\Project\\2208_Gamejam\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

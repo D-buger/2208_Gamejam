@@ -1,0 +1,353 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+MERGED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-67:12
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\67aa86ef8808cac41aa5afe6d271f3ea\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\d1ea25f3382273eed14315b543469208\androidx.customview.customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:17:1-26:12
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7bcdab9edca68925f6bcb92ddd8a20de\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\d711f81259436f09ffdf0b48105165e3\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\8bab031e716250a6a30588791dc60070\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\ebc8011c39d26c440b76466a9b971345\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c6f1e76c078a7e4f5288325854cab247\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4c1ade53cc4b20d7bc631ac17d3bfca4\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\2118a7099009bdd29f0289728ee82c0d\androidx.loader.loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7c0677be8011741026309ef690a9f4db\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bbcbf6e10ae52a08d3f4cdfbe738c39d\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a083b9190df6cd0b2eed1b8d83acb3d5\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\18f5c1f0dcc08504bb6a1709d838cf6b\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\87e4a5cb4839ebd5d033fa0ae6227780\androidx.print.print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\aa2f1cd22069a9bb65f1845d902d729f\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\df8a19ef163eaa8f3d3c8f24458897fd\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bcf856ddfeb04b3b73ed182739910d39\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1f8381ec1e1c3f6b165a08612cfd883\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\b42ab30b982239949a81eb93ceae6c0b\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:2:1-17:12
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\9f8431a80f22bd4317aee0a135e5a20a\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:2:1-21:12
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\1e9b2ae161ac9eaa84b9dd8208c6b52c\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:6:1-32:12
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+	package
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:70-101
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:102-148
+	android:versionCode
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:149-189
+supports-screens
+ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+application
+ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+MERGED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:5-65:19
+MERGED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:5-65:19
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\67aa86ef8808cac41aa5afe6d271f3ea\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\67aa86ef8808cac41aa5afe6d271f3ea\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:9:5-15:19
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:9:5-15:19
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\9f8431a80f22bd4317aee0a135e5a20a\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\9f8431a80f22bd4317aee0a135e5a20a\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:4:3-8:17
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:4:3-8:17
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:9:5-19:19
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:9:5-19:19
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\1e9b2ae161ac9eaa84b9dd8208c6b52c\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\1e9b2ae161ac9eaa84b9dd8208c6b52c\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:15:5-30:19
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:15:5-30:19
+	android:extractNativeLibs
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:18-50
+	android:appComponentFactory
+		ADDED from [:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+	android:icon
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+uses-sdk
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+MERGED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-10:41
+MERGED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-10:41
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\67aa86ef8808cac41aa5afe6d271f3ea\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\67aa86ef8808cac41aa5afe6d271f3ea\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\d1ea25f3382273eed14315b543469208\androidx.customview.customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\d1ea25f3382273eed14315b543469208\androidx.customview.customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7bcdab9edca68925f6bcb92ddd8a20de\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7bcdab9edca68925f6bcb92ddd8a20de\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\d711f81259436f09ffdf0b48105165e3\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\d711f81259436f09ffdf0b48105165e3\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\8bab031e716250a6a30588791dc60070\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\8bab031e716250a6a30588791dc60070\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\ebc8011c39d26c440b76466a9b971345\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\ebc8011c39d26c440b76466a9b971345\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c6f1e76c078a7e4f5288325854cab247\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c6f1e76c078a7e4f5288325854cab247\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4c1ade53cc4b20d7bc631ac17d3bfca4\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4c1ade53cc4b20d7bc631ac17d3bfca4\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\2118a7099009bdd29f0289728ee82c0d\androidx.loader.loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\2118a7099009bdd29f0289728ee82c0d\androidx.loader.loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7c0677be8011741026309ef690a9f4db\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\7c0677be8011741026309ef690a9f4db\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bbcbf6e10ae52a08d3f4cdfbe738c39d\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bbcbf6e10ae52a08d3f4cdfbe738c39d\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a083b9190df6cd0b2eed1b8d83acb3d5\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a083b9190df6cd0b2eed1b8d83acb3d5\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\18f5c1f0dcc08504bb6a1709d838cf6b\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\18f5c1f0dcc08504bb6a1709d838cf6b\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\87e4a5cb4839ebd5d033fa0ae6227780\androidx.print.print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\87e4a5cb4839ebd5d033fa0ae6227780\androidx.print.print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\aa2f1cd22069a9bb65f1845d902d729f\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\aa2f1cd22069a9bb65f1845d902d729f\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\df8a19ef163eaa8f3d3c8f24458897fd\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\df8a19ef163eaa8f3d3c8f24458897fd\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bcf856ddfeb04b3b73ed182739910d39\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bcf856ddfeb04b3b73ed182739910d39\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1f8381ec1e1c3f6b165a08612cfd883\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1f8381ec1e1c3f6b165a08612cfd883\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\b42ab30b982239949a81eb93ceae6c0b\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\b42ab30b982239949a81eb93ceae6c0b\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\9f8431a80f22bd4317aee0a135e5a20a\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\9f8431a80f22bd4317aee0a135e5a20a\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:3:3-42
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:3:3-42
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:7:5-44
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:7:5-44
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\1e9b2ae161ac9eaa84b9dd8208c6b52c\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\1e9b2ae161ac9eaa84b9dd8208c6b52c\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:11:5-13:41
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:11:5-13:41
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-51
+uses-permission#android.permission.INTERNET
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:22-64
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:5-18:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:5-21:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:20:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:5-24:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-72
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-48:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-50
+	android:launchMode
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:13-48
+	android:exported
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:13-36
+	android:resizeableActivity
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:13-47
+	android:configChanges
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-194
+	android:theme
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:13-54
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:27-74
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-44:40
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:17-37
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-57
+meta-data#android.notch_support
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-47:40
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:17-37
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:17-53
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:9-52:33
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-30
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:9-55:36
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-47
+meta-data#unity.launch-fullscreen
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:9-58:36
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:58:13-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-51
+meta-data#unity.allow-resizable-window
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:9-61:37
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-34
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:13-56
+meta-data#notch.config
+ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:9-64:50
+	android:value
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:64:13-47
+	android:name
+		ADDED from [:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:13-40
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:7:22-76
+provider#com.google.android.gms.games.provider.PlayGamesInitProvider
+ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:5-206
+	android:authorities
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:90-155
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:156-180
+	android:initOrder
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:181-203
+	android:name
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:15-89
+activity#com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity
+ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:5-180
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:106-130
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:131-177
+	android:name
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:15-105
+meta-data#com.google.android.gms.games.version
+ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:5-117
+	android:value
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:68-114
+	android:name
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:16-67
+activity#com.google.games.bridge.GenericResolutionActivity
+ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:10:9-18:20
+	android:label
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:13:13-54
+	android:exported
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:14:13-83
+	android:name
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:11:13-77
+meta-data#instantapps.clients.allowed
+ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:15:13-17:40
+	android:value
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:17:17-37
+	android:name
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:16:17-59
+meta-data#com.google.android.gms.games.APP_ID
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-20:48
+	android:value
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-63
+meta-data#com.google.android.gms.games.unityVersion
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-25:44
+	android:value
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:25:13-41
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:24:13-69
+activity#com.google.games.bridge.NativeBridgeActivity
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-29:86
+	android:theme
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-83
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-72

@@ -1,0 +1,4 @@
+#Wed Feb 01 03:20:50 KST 2023
+base.0=C\:\\Users\\soo\\Desktop\\2208_gamejam\\Project\\2208_Gamejam\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

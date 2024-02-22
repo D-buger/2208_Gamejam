@@ -11,6 +11,7 @@ public class Effect : MonoBehaviour
         _effectAnim = GetComponent<Animator>();
     }
 
+
     private void FollowMouse()
     {
         Vector2 mousePos = new Vector2(SystemManager.Instance.input.MousePos.x, SystemManager.Instance.input.MousePos.y);

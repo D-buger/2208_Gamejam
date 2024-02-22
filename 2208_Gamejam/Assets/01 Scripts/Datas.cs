@@ -21,6 +21,7 @@ public class Datas
     }
     public float GameTotalPlayTime
     {
+        get => gameTotalPlayTime;
         set => gameTotalPlayTime = value;
     }
     public int TotalUsedGuard

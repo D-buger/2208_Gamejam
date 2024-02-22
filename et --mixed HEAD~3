@@ -1,0 +1,199 @@
+[33mcommit 94348d9adbd971685f280252d0624457dc9330d2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 7f9a211b 6af4a558
+Author: D-buger <o3oduck@naver.com>
+Date:   Thu Feb 22 23:53:37 2024 +0900
+
+    Merge branch 'main' of https://github.com/D-buger/2208_Gamejam
+
+[33mcommit 7f9a211beebb3d12cacf349abe4252b7f51cc699[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Thu Feb 22 23:49:48 2024 +0900
+
+    [이전 커밋] 유니티 버전 업그레이드 및 갈매기 수정
+
+[33mcommit 6af4a55890da46a105950aded5d12e45f4a0432d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gurumne <53335765+D-buger@users.noreply.github.com>
+Date:   Tue Feb 20 10:58:39 2024 +0900
+
+    Update README.md
+
+[33mcommit 26cb2494269b1027a58275eadc10cf8fd295f5ac[m
+Author: gurumne <53335765+D-buger@users.noreply.github.com>
+Date:   Tue Feb 20 10:58:28 2024 +0900
+
+    Update README.md
+
+[33mcommit 76cb16cdea7270284c446821c3034d4234f0293f[m
+Author: gurumne <53335765+D-buger@users.noreply.github.com>
+Date:   Tue Feb 20 10:57:55 2024 +0900
+
+    Update README.md
+
+[33mcommit 51b3ee10efc722e5ec76d685b3b02b9f82cd9280[m
+Author: D-buger <53335765+D-buger@users.noreply.github.com>
+Date:   Mon Feb 12 19:50:57 2024 +0900
+
+    Create README.md
+
+[33mcommit cabdfaad526d2ae7d691babe05d91a7537903c22[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Jan 14 21:48:01 2023 +0900
+
+    유니티 버전 업그레이드 및 갈매기 수정
+
+[33mcommit f3ed98d66886aeb0cc79f8708d46a43aa9b5be97[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Jan 14 20:28:04 2023 +0900
+
+    바뀐 이미지 및 애니메이션 변경
+
+[33mcommit d88a19483668802421a697d3a99daeb843721f21[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Mon Jan 9 19:37:14 2023 +0900
+
+    바뀐 인트로 적용
+
+[33mcommit e2c10360328be58f57e53c7c85514e8e754091e2[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Wed Jan 4 23:17:36 2023 +0900
+
+    인트로 컷씬 삽입 및 밸런싱 패치 적용
+
+[33mcommit 36871aba7d70cc7116693a425c26cd52fe3005b8[m[33m ([m[1;31morigin/balancing[m[33m, [m[1;32mbalancing[m[33m)[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sun Nov 27 19:19:24 2022 +0900
+
+    2차 밸런싱 빌드
+
+[33mcommit 501a385c37973df75f377f8f87d44b1e2e25c82f[m
+Author: Chanmaaaaaaaaaaan <cksehf20378@gmail.com>
+Date:   Sun Nov 27 18:20:56 2022 +0900
+
+    2차 벨런싱
+    
+    하트 위치 변경
+    갈매기 등장 확률 감소
+    비치볼 속도 증가
+    [개인적인 의견]
+    시간이 지날 때 마다 스피드가 점점 빨라지는 건 어떨까요
+
+[33mcommit 4fcf317906608b0369665cee5948eca55a4da23f[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sun Nov 27 04:33:14 2022 +0900
+
+    안드로이드 밸런싱 테스트 빌드
+
+[33mcommit 6805e1c9c0f38554d75e03a4cd51747908024548[m
+Author: Chanmaaaaaaaaaaan <cksehf20378@gmail.com>
+Date:   Wed Nov 23 01:31:57 2022 +0900
+
+    1차 벨런싱
+    
+    양쪽 게 위치 변경
+    파도 limit time 감소
+    갈매기 speed 증가
+    갈매기 move time 감소
+    비치볼 스피드 증가
+    비치볼 dragg limit time 증가
+
+[33mcommit 13bb020bfb8b8252c1c7265c19d791e75bcb7597[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Tue Nov 22 22:14:14 2022 +0900
+
+    no message
+
+[33mcommit c738417b4f4ed2575412583d681f52084d44a6c3[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Tue Nov 22 21:17:08 2022 +0900
+
+    데이터 관련 처리
+
+[33mcommit 414d940a0e8253fa570dc033133eb7c03d1766fc[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Nov 5 15:50:06 2022 +0900
+
+    22
+
+[33mcommit 4433e854057fdf9f043bd8a7577494d1a9aa4836[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Nov 5 15:25:01 2022 +0900
+
+    이미지 깨짐현상 수정
+
+[33mcommit e994bf8468b69ed2a863ac7edf0fdb25f6783cae[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Sep 17 20:30:47 2022 +0900
+
+    데이터 관리 방식 완전히 수정 완료
+
+[33mcommit 1c26612315f4bc356c8ee14120f1ca03dbf8d355[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Sep 17 20:04:15 2022 +0900
+
+    데이터 세이브
+
+[33mcommit 442ce0f837608dd0fec0a8da5d5ce4bb647becda[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sun Sep 11 20:33:11 2022 +0900
+
+    Input System 임시 변경 (테스트 안됨), 안드로이드 스튜디오 애뮬레이터와 연결
+
+[33mcommit 8e8714023bca1accb83ca1a69c28e2beec1efff6[m[33m ([m[1;31morigin/chanman[m[33m)[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Tue Sep 6 16:30:17 2022 +0900
+
+    해상도 대응
+
+[33mcommit 5e6fbb3a29d4e79388de854811ca5eda044ba766[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Tue Aug 30 18:37:54 2022 +0900
+
+    1차 윈도우 빌드 후 백업
+
+[33mcommit ac9e6740e3cad6120fcc1706a3def4d19b3b09dc[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Fri Aug 19 01:03:33 2022 +0900
+
+    게임 완성 이후로는 버그 수정
+
+[33mcommit 882f3611e92c481c005b4cfae11d6f307f580a01[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Thu Aug 18 22:30:29 2022 +0900
+
+    효과음 및 이펙트 적용 요함
+
+[33mcommit aafe30ab04cdfb1a1de54a2cee359e232dfbfcf8[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Thu Aug 18 20:55:52 2022 +0900
+
+    이펙트, SFX사운드 적용 안됨, 꽃게 및 윈도우즈창 관련 이슈 처리요망
+
+[33mcommit de352fd7dbdb1e31e70cac1c8dae6931b4711c1d[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Tue Aug 16 20:49:40 2022 +0900
+
+    사운드, 이펙트등 미적용, 파도 미구현, 버그1
+
+[33mcommit 2ac6727ab9a8a4b8460ef1df4826ebdd664bf66b[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sun Aug 7 02:17:21 2022 +0900
+
+    갈매기 일부 구현, 인게임 UI 및 양동이 구현, Input 시스템 일부 수정
+
+[33mcommit 37893812b52d529733081fb470dec4071c49089d[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Sat Aug 6 03:03:29 2022 +0900
+
+    게 구현완료
+
+[33mcommit 0d3700ba4800bfc5b1f166428bc7c418e42d61c8[m
+Author: D-buger <o3oduck@naver.com>
+Date:   Fri Aug 5 23:53:48 2022 +0900
+
+    초기 세팅
+
+[33mcommit ae4ebe69f636679ad417db2828c60f892fd0e1a6[m
+Author: D-buger <53335765+D-buger@users.noreply.github.com>
+Date:   Fri Aug 5 19:41:59 2022 +0900
+
+    Initial commit

@@ -6,9 +6,10 @@ using UnityEngine.Audio;
 
 public class Settings : MonoBehaviour
 {
-    private static readonly string SFX_VOLUME = "SFXVolume";
-    private static readonly string BGM_VOLUME = "BGMVolume";
-    private static readonly string SCREEN_TYPE = "IsFullScreen";
+    public static readonly string SFX_VOLUME = "SFXVolume";
+    public static readonly string BGM_VOLUME = "BGMVolume";
+    public static readonly string PLAY_VOLUME = "PlayVolume";
+    public static readonly string SCREEN_TYPE = "IsFullScreen";
 
     [SerializeField] private GameObject bgmImage;
     [SerializeField] private Slider bgmVolume;
@@ -38,6 +39,8 @@ public class Settings : MonoBehaviour
 
         fullScreen.isOn = PlayerPrefs.GetInt(SCREEN_TYPE) == 1;
         borderlessScreen.isOn = !fullScreen.isOn;
+
+        Screen.fullScreenMode = (FullScreenMode)PlayerPrefs.GetInt(SCREEN_TYPE);
     }
 
     public void SetFirst()
@@ -48,6 +51,15 @@ public class Settings : MonoBehaviour
         audioMixer.SetFloat(BGM_VOLUME, value == 0 ? -80f : _minVolume * (1 - (float)(value * 0.1f)));
     }
 
+    public void MuteSFX()
+    {
+        audioMixer.SetFloat(PLAY_VOLUME, -80f);
+    }
+
+    public void UnmuteSFX()
+    {
+        audioMixer.SetFloat(PLAY_VOLUME, 0);
+    }
 
     public void SetSfxVolume()
     {
@@ -55,8 +67,6 @@ public class Settings : MonoBehaviour
         audioMixer.SetFloat(SFX_VOLUME, value == 0 ? -80f : _minVolume * (1 - (float)(value * 0.1f)));
         PlayerPrefs.SetInt(SFX_VOLUME, value);
         SetImage(sfxImage, value != 0);
-
-        Screen.fullScreenMode = (FullScreenMode)PlayerPrefs.GetInt(SCREEN_TYPE);
     }
 
     public void SetBgmVolume()

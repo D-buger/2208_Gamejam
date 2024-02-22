@@ -4,13 +4,14 @@ using UnityEngine;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 
+#if UNITY_ANDROID
 public class GoogleService
 {
     private bool isLogin;
-    public bool IsLogin
+    public  bool IsLogin
     {
         get => isLogin;
-        set => isLogin = value;
+        private set => isLogin = value;
     }
 
     public GoogleService()
@@ -34,4 +35,6 @@ public class GoogleService
             });
         }
     }
+
 }
+#endif

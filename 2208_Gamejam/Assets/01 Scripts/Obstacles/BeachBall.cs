@@ -95,7 +95,7 @@ public class BeachBall : Obstacle
     public override void OnDrag(Vector2 mousePos)
     {
         GameManager.Instance.ChangeCursorToDrag(true);
-        if (SystemManager.Instance.input.DraggedTime < data.draggedLimitTime && !_isBounce && !SystemManager.Instance.input.DraggedPos.Equals(Vector2.zero))
+        if (!_isBounce)
         {
             SystemManager.Instance.playData.BeachBallDraggedNum += 1;
             _isBounce = true;

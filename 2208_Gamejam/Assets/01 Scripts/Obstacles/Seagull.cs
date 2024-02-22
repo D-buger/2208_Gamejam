@@ -12,8 +12,7 @@ public class Seagull : Obstacle
 
     private static int appearedSeagullNum = 0;
 
-    [SerializeField] private Sprite[] seagullSprite;
-    [SerializeField] private Sprite seagullPassSprite;
+    private Animator seagullAnim;
 
     [SerializeField]
     private SeagullData data;
@@ -36,6 +35,7 @@ public class Seagull : Obstacle
         _seagullInAction = null;
         datas = data;
         effectAnimator = GetComponentInChildren<Animator>();
+        seagullAnim = GetComponent<Animator>();
     }
 
     protected override void Start()
@@ -94,7 +94,7 @@ public class Seagull : Obstacle
             if(_renderer.color.a < 0.05f)
             {
                 _isFadeOut = false;
-                _renderer.color = new Color(_renderer.color.r, _renderer.color.g, _renderer.color.b, 255);
+                _renderer.color = new Color(_renderer.color.r, _renderer.color.g, _renderer.color.b, 1);
                 _distColor = 0;
                 SetAppear(false);
                 if (--appearedSeagullNum == 0)
@@ -110,24 +110,27 @@ public class Seagull : Obstacle
 
     public void SetDisable()
     {
-        effectAnimator.SetTrigger("effectTrigger");
         SetAudioAndPlay(seagullSatisfiedSound);
+        seagullAnim.SetTrigger("SeagullHappy");
         _renderer.color = Color.white;
-        _renderer.sprite = seagullPassSprite;
         _coll.enabled = false;
         _isFadeOut = true;
     }
 
     public override void SetAppear(bool isAppear)
     {
-        if(isAppear)
-            _renderer.sprite = seagullSprite[Random.Range(0, seagullSprite.Length)];
+        if (isAppear)
+        {
+            if(seagullAnim.GetInteger("SeagullMotion") == 0)
+                 seagullAnim.SetInteger("SeagullMotion", Random.Range(1, 4));
+            _renderer.color = Color.white;
+        }
 
-        _renderer.color = Color.white;
         base.SetAppear(isAppear);
         oriPos = transform.position;
         if (!isAppear)
         {
+            seagullAnim.SetInteger("SeagullMotion", 0);
             _disappearedTime = SystemManager.Instance.timer.GetGameTime;
         }
     }
@@ -135,7 +138,7 @@ public class Seagull : Obstacle
     public override void MouseDown(Vector2 mousePos)
     {
         SystemManager.Instance.playData.SeagullTouchNum += 1;
-        _renderer.color = Color.red;
+        _renderer.color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
         _coll.enabled = false;
         SystemManager.Instance.snack.GetSnack(this.transform);
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Audio;
 
 public class SystemManager : SingletonBehavior<SystemManager>
 {
@@ -24,7 +25,11 @@ public class SystemManager : SingletonBehavior<SystemManager>
     private int remainedTotalBucket;
     [SerializeField] private GameObject bucket;
 
+    [SerializeField] private GameObject defaultPanel;
+    [SerializeField] private GameObject pausePanel;
+
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject newBestText;
 
     [SerializeField] private GameObject deathCamParent;
     private GameObject[] _deathCams;
@@ -90,6 +95,11 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     protected override void OnAwake()
     {
+        GameManager.Instance.KeyAction += SetPause;
+        GameManager.Instance.setting.UnmuteSFX();
+        GameManager.Instance.setting.SetFirst();
+        defaultPanel.SetActive(false);
+        newBestText.SetActive(false);
         playData.GameStartNum = 1;
         Time.timeScale = 1;
         timer = new Timer(ui.SetTimerText);
@@ -121,6 +131,14 @@ public class SystemManager : SingletonBehavior<SystemManager>
             }
         }
     }
+
+    public void SetPause()
+    {
+        defaultPanel.SetActive(true);
+        pausePanel.SetActive(true);
+        SetTimeScale(0);
+        GameManager.Instance.setting.MuteSFX();
+    }
     public void CastleHit(Vector2 hitPoint)
     {
         castleHit.HitEffect(hitPoint);
@@ -136,6 +154,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     public void GameOver()
     {
+        GameManager.Instance.setting.MuteSFX();
         Time.timeScale = 0;
         gameOverPanel.SetActive(true);
         gameOverPanel.transform.parent.gameObject.SetActive(true);
@@ -143,7 +162,7 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
         if (PlayerPrefs.GetFloat(GET_BEST_SCORE) < timer.GetGameTime)
         {
-            gameOverPanel.transform.GetChild(0).gameObject.SetActive(true);
+            newBestText.SetActive(true);
             PlayerPrefs.SetFloat(GET_BEST_SCORE, timer.GetGameTime);
         }
         ui.SetGameOverBestScoreText();
@@ -156,11 +175,13 @@ public class SystemManager : SingletonBehavior<SystemManager>
 
     public void ChangeScene(string sceneName)
     {
+        GameManager.Instance.KeyAction = null;
         GameManager.Instance.ChangeScene(sceneName);
     }
 
     public void ChangeScene(int sceneNum)
     {
+        GameManager.Instance.KeyAction = null;
         GameManager.Instance.ChangeScene(sceneNum);
     }
 }

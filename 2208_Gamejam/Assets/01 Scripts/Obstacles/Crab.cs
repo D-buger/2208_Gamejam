@@ -97,7 +97,6 @@ public class Crab : Obstacle
 
     public override void OnDrag(Vector2 mousePos)
     {
-
         float min = mouseDownPos.x > oriPos.x ? oriPos.x : mouseDownPos.x;
         float max = mouseDownPos.x < oriPos.x ? oriPos.x : mouseDownPos.x;
         transform.position = new Vector2(Mathf.Clamp(mousePos.x, min, max), transform.position.y);

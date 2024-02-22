@@ -1,0 +1,223 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.MoBangSa.MoBangSi"
+4    android:installLocation="preferExternal"
+5    android:versionCode="8"
+6    android:versionName="4.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+13        android:anyDensity="true"
+13-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+14        android:largeScreens="true"
+14-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+15        android:normalScreens="true"
+15-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+16        android:smallScreens="true"
+16-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+18
+19    <uses-feature android:glEsVersion="0x00020000" />
+19-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-54
+19-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-51
+20
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-67
+21-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:22-64
+22
+23    <uses-feature
+23-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:5-18:36
+24        android:name="android.hardware.touchscreen"
+24-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:9-52
+25        android:required="false" />
+25-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-33
+26    <uses-feature
+26-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:5-21:36
+27        android:name="android.hardware.touchscreen.multitouch"
+27-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:20:9-63
+28        android:required="false" />
+28-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-33
+29    <uses-feature
+29-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:5-24:36
+30        android:name="android.hardware.touchscreen.multitouch.distinct"
+30-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-72
+31        android:required="false" />
+31-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:9-33
+32
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:7:5-79
+33-->[:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\f1636d4ee2968c1ca82c1ebb9114b3a1\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:7:22-76
+34
+35    <application
+35-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[:androidx.core.core-1.2.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:24:18-86
+37        android:extractNativeLibs="true"
+37-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:18-50
+38        android:icon="@mipmap/app_icon"
+38-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+39        android:label="@string/app_name" >
+39-->C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+40        <activity
+40-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-48:20
+41            android:name="com.unity3d.player.UnityPlayerActivity"
+41-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-66
+42            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+42-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-194
+43            android:exported="true"
+43-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:13-36
+44            android:hardwareAccelerated="false"
+44-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:13-48
+45            android:launchMode="singleTask"
+45-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-44
+46            android:resizeableActivity="false"
+46-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:13-47
+47            android:screenOrientation="landscape"
+47-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-50
+48            android:theme="@style/UnityThemeSelector" >
+48-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:13-54
+49            <intent-filter>
+49-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:13-40:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:17-69
+50-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:17-77
+52-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:27-74
+53            </intent-filter>
+54
+55            <meta-data
+55-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-44:40
+56                android:name="unityplayer.UnityActivity"
+56-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-57
+57                android:value="true" />
+57-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:17-37
+58            <meta-data
+58-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-47:40
+59                android:name="android.notch_support"
+59-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:17-53
+60                android:value="true" />
+60-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:17-37
+61        </activity>
+62
+63        <meta-data
+63-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:9-52:33
+64            android:name="unity.splash-mode"
+64-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-45
+65            android:value="0" />
+65-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-30
+66        <meta-data
+66-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:9-55:36
+67            android:name="unity.splash-enable"
+67-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-47
+68            android:value="True" />
+68-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-33
+69        <meta-data
+69-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:9-58:36
+70            android:name="unity.launch-fullscreen"
+70-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-51
+71            android:value="True" />
+71-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:58:13-33
+72        <meta-data
+72-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:9-61:37
+73            android:name="unity.allow-resizable-window"
+73-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:13-56
+74            android:value="False" />
+74-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-34
+75        <meta-data
+75-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:9-64:50
+76            android:name="notch.config"
+76-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:13-40
+77            android:value="portrait|landscape" />
+77-->[:unityLibrary] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:64:13-47
+78
+79        <activity
+79-->[:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+80-->[:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+81            android:exported="false"
+81-->[:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+82-->[:com.google.android.gms.play-services-base-18.0.1:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\bb6768f20d1de5ba02407f9183f06731\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+83
+84        <meta-data
+84-->[:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+85            android:name="com.google.android.gms.version"
+85-->[:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+86            android:value="@integer/google_play_services_version" />
+86-->[:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\c158dbe6bad5056979dbf1ee0625408f\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+87
+88        <provider
+88-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:5-206
+89            android:name="com.google.android.gms.games.provider.PlayGamesInitProvider"
+89-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:15-89
+90            android:authorities="com.MoBangSa.MoBangSi.playgamesinitprovider"
+90-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:90-155
+91            android:exported="false"
+91-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:156-180
+92            android:initOrder="99" />
+92-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:181-203
+93
+94        <activity
+94-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:5-180
+95            android:name="com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity"
+95-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:15-105
+96            android:exported="false"
+96-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:106-130
+97            android:theme="@style/Theme.Games.Transparent" />
+97-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:131-177
+98
+99        <meta-data
+99-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:5-117
+100            android:name="com.google.android.gms.games.version"
+100-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:16-67
+101            android:value="@string/play_games_sdk_version" />
+101-->[:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\a809b709c2fe9f8713774ce42335349e\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:68-114
+102
+103        <activity
+103-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:10:9-18:20
+104            android:name="com.google.games.bridge.GenericResolutionActivity"
+104-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:11:13-77
+105            android:exported="false"
+105-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:12:13-37
+106            android:label="GenericResolutionActivity"
+106-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:13:13-54
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+107-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:14:13-83
+108            <meta-data
+108-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:15:13-17:40
+109                android:name="instantapps.clients.allowed"
+109-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:16:17-59
+110                android:value="true" />
+110-->[:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\soo\.gradle\caches\transforms-2\files-2.1\3016a60a1cc074a0d98e67eab833e079\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:17:17-37
+111        </activity> <!-- The space in these forces it to be interpreted as a string vs. int -->
+112        <meta-data
+112-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-20:48
+113            android:name="com.google.android.gms.games.APP_ID"
+113-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-63
+114            android:value="\u00371292135229" /> <!-- Keep track of which plugin is being used -->
+114-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:20:13-45
+115        <meta-data
+115-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-25:44
+116            android:name="com.google.android.gms.games.unityVersion"
+116-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:24:13-69
+117            android:value="\u0030.11.01" />
+117-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:25:13-41
+118
+119        <activity
+119-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-29:86
+120            android:name="com.google.games.bridge.NativeBridgeActivity"
+120-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-72
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+121-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\soo\Desktop\2208_gamejam\Project\2208_Gamejam\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-83
+122    </application>
+123
+124</manifest>
