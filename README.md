@@ -9,4 +9,5 @@
 
 ![image](https://github.com/D-buger/2208_Gamejam/assets/53335765/cc3b27ad-7117-411c-aac3-9a9fd6504904)
 
-![image](https://github.com/D-buger/2208_Gamejam/assets/53335765/4ac6b562-f0ca-41f4-94fa-6feb3c68361a)
+![image](https://github.com/D-buger/2208_Gamejam/assets/53335765/3c0f7291-8eea-4556-b085-7c59eb257247)
+
